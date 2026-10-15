@@ -1,0 +1,19 @@
+{
+  "name": "DAGK K98 PRO V2 网页驱动",
+  "short_name": "K98PRO 驱动",
+  "description": "免安装的 DAGK K98 PRO V2 键盘配置工具：改键、灯效、宏、三档板载，支持有线与 2.4G。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "minimal-ui",
+  "orientation": "landscape",
+  "background_color": "#000000",
+  "theme_color": "#3E3E34",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "./assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,24 @@
+# 只部署 web/ 静态站点（vercel.json 里 outputDirectory = "web"）
+# 下面这些只是"别把几百 MB 的逆向材料传上去"，实际发布的只有 web/ 里的文件。
+
+# 原厂材料 / 逆向工作目录
+app/
+extract/
+work/
+.dsh/
+*.exe
+
+# 测试、文档、数据（发布产物用不到）
+tests/
+docs/
+data/
+AGENTS.md
+README.md
+LICENSE
+package.json
+70-dagk-k98pro.rules
+*.rules
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db

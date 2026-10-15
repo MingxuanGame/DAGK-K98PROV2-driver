@@ -1,0 +1,7 @@
+# DAGK K98 PRO V2 网页驱动
+# 整站都是可索引的静态资源，没有需要屏蔽的目录。
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dagk.mxgame.top/sitemap.xml

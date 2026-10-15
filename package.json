@@ -1,0 +1,27 @@
+{
+  "name": "dagk-k98pro-web-driver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DAGK K98 PRO V2 浏览器驱动 (WebHID) — 逆向自原厂 DAGK Driver",
+  "keywords": ["keyboard", "webhid", "dagk", "k98pro", "driver", "chrome"],
+  "license": "MIT",
+  "scripts": {
+    "dev": "node tests/serve.mjs 8177",
+    "test": "node tests/run-tests.mjs",
+    "test:keymap": "node tests/smoke-keymap.mjs",
+    "test:rf": "node tests/rf-tests.mjs",
+    "test:frames": "node tests/compare-frames.mjs",
+    "test:deploy": "node tests/deploy-check.mjs",
+    "test:e2e": "node tests/e2e-browser.mjs",
+    "test:all": "npm test && npm run test:keymap && npm run test:rf && npm run test:frames && npm run test:deploy && npm run test:e2e",
+    "test:hw": "python3 tests/hw-wired-full.py",
+    "hw:status": "python3 tests/hw-check.py",
+    "hw:protocol": "python3 tests/hidraw-test.py",
+    "hw:dongle": "python3 tests/dongle-test.py",
+    "hw:session": "python3 tests/hw-session.py"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

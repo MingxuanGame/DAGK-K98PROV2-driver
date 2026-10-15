@@ -1,0 +1,5761 @@
+{
+ "_meta": {
+  "generatedFrom": "app/resources/app/dist/js/index.630fe4af.js, app/resources/app/dist/js/2714b259.js, app/resources/app/dist/js/530511ba.js",
+  "purpose": "K98PRO (DAGK, VID 0x3151/12625, PID 0x5002/20482) physical key layout + matrix, for a WebHID re-implementation"
+ },
+ "device": {
+  "id": 3780,
+  "vid": 12625,
+  "vidHex": "0x3151",
+  "pid": 20482,
+  "pidHex": "0x5002",
+  "name": "yc3123_kk_k98_pro_3m_1k",
+  "displayName": "K98PRO",
+  "company": "DAGK",
+  "type": "keyboard",
+  "layer": 3,
+  "fnSysLayer": {
+   "win": 1,
+   "mac": 1
+  },
+  "keyLayoutExpr": "c.Common98_Y98",
+  "driverClass": "Yc3123_kk_k98_pro_3m_1k (chunk 530511ba.js)"
+ },
+ "enum": {
+  "expr": "c.Common98_Y98",
+  "value": "常规98键 Y98",
+  "declAnchor": "var c=(e=>(e.Common21_SKYPAD=...))",
+  "declOffset": 482205
+ },
+ "layoutModule": {
+  "chunk": "2714b259.js",
+  "exportName": "keyboard_98_y98_keymappings_ui_info",
+  "sourceAnchor": "const e={...};export{e as keyboard_98_y98_keymappings_ui_info};"
+ },
+ "geometry": {
+  "width": 881,
+  "height": 281,
+  "unit": "px (design units of the vendor UI)"
+ },
+ "keys": [
+  {
+   "order": 0,
+   "id": "Backspace",
+   "x": 599,
+   "y": 56,
+   "width": 87,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "BackSpace"
+   ],
+   "hidCode": 42,
+   "hidHex": "0x2a",
+   "scanCode": 14,
+   "keyCode": 8,
+   "hidValue": "BackSpace",
+   "matrixIndex": 79,
+   "matrixIndexes": [
+    79
+   ],
+   "matrixCode": [
+    0,
+    0,
+    42,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    9,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    10,
+    9,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 1,
+   "id": "Tab",
+   "x": 1,
+   "y": 102,
+   "width": 66,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Tab"
+   ],
+   "hidCode": 43,
+   "hidHex": "0x2b",
+   "scanCode": 15,
+   "keyCode": 9,
+   "hidValue": "Tab",
+   "matrixIndex": 2,
+   "matrixIndexes": [
+    2
+   ],
+   "matrixCode": [
+    0,
+    0,
+    43,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 2,
+   "id": "CapsLock",
+   "x": 1,
+   "y": 148,
+   "width": 72,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Caps"
+   ],
+   "hidCode": 57,
+   "hidHex": "0x39",
+   "scanCode": 58,
+   "keyCode": 20,
+   "hidValue": "Caps Lock",
+   "matrixIndex": 3,
+   "matrixIndexes": [
+    3
+   ],
+   "matrixCode": [
+    0,
+    0,
+    57,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 3,
+   "id": "Enter",
+   "x": 585,
+   "y": 148,
+   "width": 101,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Enter"
+   ],
+   "hidCode": 40,
+   "hidHex": "0x28",
+   "scanCode": 28,
+   "keyCode": 13,
+   "hidValue": "Enter",
+   "matrixIndex": 81,
+   "matrixIndexes": [
+    81
+   ],
+   "matrixCode": [
+    0,
+    0,
+    40,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 4,
+   "id": "ShiftLeft",
+   "x": 1,
+   "y": 194,
+   "width": 93,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Shift"
+   ],
+   "hidCode": 225,
+   "hidHex": "0xe1",
+   "scanCode": 42,
+   "keyCode": 16,
+   "hidValue": "Shift",
+   "matrixIndex": 4,
+   "matrixIndexes": [
+    4
+   ],
+   "matrixCode": [
+    0,
+    0,
+    225,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 5,
+   "id": "ShiftRight",
+   "x": 560,
+   "y": 194,
+   "width": 79,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Shift"
+   ],
+   "hidCode": 229,
+   "hidHex": "0xe5",
+   "scanCode": 54,
+   "keyCode": 16,
+   "hidValue": "r_Shift",
+   "matrixIndex": 76,
+   "matrixIndexes": [
+    76
+   ],
+   "matrixCode": [
+    0,
+    0,
+    229,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 6,
+   "id": "ControlLeft",
+   "x": 1,
+   "y": 240,
+   "width": 48,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Ctrl"
+   ],
+   "hidCode": 224,
+   "hidHex": "0xe0",
+   "scanCode": 29,
+   "keyCode": 17,
+   "hidValue": "Ctrl",
+   "matrixIndex": 5,
+   "matrixIndexes": [
+    5
+   ],
+   "matrixCode": [
+    0,
+    0,
+    224,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 7,
+   "id": "MetaLeft",
+   "x": 55,
+   "y": 240,
+   "width": 48,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Win"
+   ],
+   "hidCode": 227,
+   "hidHex": "0xe3",
+   "scanCode": 3675,
+   "keyCode": 91,
+   "hidValue": "Win",
+   "matrixIndex": 11,
+   "matrixIndexes": [
+    11
+   ],
+   "matrixCode": [
+    0,
+    0,
+    227,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    3,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 8,
+   "id": "AltLeft",
+   "x": 109,
+   "y": 240,
+   "width": 48,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Alt"
+   ],
+   "hidCode": 226,
+   "hidHex": "0xe2",
+   "scanCode": 56,
+   "keyCode": 18,
+   "hidValue": "Alt",
+   "matrixIndex": 17,
+   "matrixIndexes": [
+    17
+   ],
+   "matrixCode": [
+    0,
+    0,
+    226,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 9,
+   "id": "Space",
+   "x": 163,
+   "y": 240,
+   "width": 312,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Space"
+   ],
+   "hidCode": 44,
+   "hidHex": "0x2c",
+   "scanCode": 57,
+   "keyCode": 32,
+   "hidValue": "(space)",
+   "matrixIndex": 41,
+   "matrixIndexes": [
+    41
+   ],
+   "matrixCode": [
+    0,
+    0,
+    44,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    8,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    10,
+    8,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 10,
+   "id": "AltRight",
+   "x": 481,
+   "y": 240,
+   "width": 48,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Alt"
+   ],
+   "hidCode": 230,
+   "hidHex": "0xe6",
+   "scanCode": 3640,
+   "keyCode": 18,
+   "hidValue": "r_Alt",
+   "matrixIndex": 59,
+   "matrixIndexes": [
+    59
+   ],
+   "matrixCode": [
+    0,
+    0,
+    230,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 11,
+   "id": "Fn",
+   "x": 535,
+   "y": 240,
+   "width": 48,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Fn"
+   ],
+   "hidCode": 167837696,
+   "hidHex": "0xa010000",
+   "scanCode": 0,
+   "keyCode": null,
+   "hidValue": "fn",
+   "matrixIndex": 65,
+   "matrixIndexes": [
+    65
+   ],
+   "matrixCode": [
+    10,
+    1,
+    0,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 12,
+   "id": "Numpad0",
+   "x": 748,
+   "y": 240,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "0",
+    "Ins"
+   ],
+   "hidCode": 98,
+   "hidHex": "0x62",
+   "scanCode": 82,
+   "keyCode": 96,
+   "hidValue": "num_0",
+   "matrixIndex": 95,
+   "matrixIndexes": [
+    95
+   ],
+   "matrixCode": [
+    0,
+    0,
+    98,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 13,
+   "id": "NumpadAdd",
+   "x": 840,
+   "y": 102,
+   "width": 40,
+   "height": 86,
+   "type": "key",
+   "displayText": [
+    "+"
+   ],
+   "hidCode": 87,
+   "hidHex": "0x57",
+   "scanCode": 78,
+   "keyCode": 107,
+   "hidValue": "num_+",
+   "matrixIndex": 104,
+   "matrixIndexes": [
+    104
+   ],
+   "matrixCode": [
+    0,
+    0,
+    87,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 14,
+   "id": "NumpadEnter",
+   "x": 840,
+   "y": 194,
+   "width": 40,
+   "height": 86,
+   "type": "key",
+   "displayText": [
+    "Enter"
+   ],
+   "hidCode": 88,
+   "hidHex": "0x58",
+   "scanCode": 3612,
+   "keyCode": 13,
+   "hidValue": "num_Enter",
+   "matrixIndex": 107,
+   "matrixIndexes": [
+    107
+   ],
+   "matrixCode": [
+    0,
+    0,
+    88,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 15,
+   "id": "Backslash",
+   "x": 625,
+   "y": 102,
+   "width": 61,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "\\|"
+   ],
+   "hidCode": 49,
+   "hidHex": "0x31",
+   "scanCode": 43,
+   "keyCode": 220,
+   "hidValue": "\\",
+   "matrixIndex": 80,
+   "matrixIndexes": [
+    80
+   ],
+   "matrixCode": [
+    0,
+    0,
+    49,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 16,
+   "id": "Backquote",
+   "x": 1,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "`~"
+   ],
+   "hidCode": 53,
+   "hidHex": "0x35",
+   "scanCode": 41,
+   "keyCode": 192,
+   "hidValue": "`",
+   "matrixIndex": 1,
+   "matrixIndexes": [
+    1
+   ],
+   "matrixCode": [
+    0,
+    0,
+    53,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 17,
+   "id": "Digit1",
+   "x": 47,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "1!"
+   ],
+   "hidCode": 30,
+   "hidHex": "0x1e",
+   "scanCode": 2,
+   "keyCode": 49,
+   "hidValue": "1",
+   "matrixIndex": 7,
+   "matrixIndexes": [
+    7
+   ],
+   "matrixCode": [
+    0,
+    0,
+    30,
+    0
+   ],
+   "fnMatrixCode": [
+    14,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    14,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 18,
+   "id": "Digit2",
+   "x": 93,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "2@"
+   ],
+   "hidCode": 31,
+   "hidHex": "0x1f",
+   "scanCode": 3,
+   "keyCode": 50,
+   "hidValue": "2",
+   "matrixIndex": 13,
+   "matrixIndexes": [
+    13
+   ],
+   "matrixCode": [
+    0,
+    0,
+    31,
+    0
+   ],
+   "fnMatrixCode": [
+    14,
+    0,
+    1,
+    0
+   ],
+   "fnMacMatrixCode": [
+    14,
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "order": 19,
+   "id": "Digit3",
+   "x": 139,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "3#"
+   ],
+   "hidCode": 32,
+   "hidHex": "0x20",
+   "scanCode": 4,
+   "keyCode": 51,
+   "hidValue": "3",
+   "matrixIndex": 19,
+   "matrixIndexes": [
+    19
+   ],
+   "matrixCode": [
+    0,
+    0,
+    32,
+    0
+   ],
+   "fnMatrixCode": [
+    14,
+    0,
+    2,
+    0
+   ],
+   "fnMacMatrixCode": [
+    14,
+    0,
+    2,
+    0
+   ]
+  },
+  {
+   "order": 20,
+   "id": "Digit4",
+   "x": 185,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "4$"
+   ],
+   "hidCode": 33,
+   "hidHex": "0x21",
+   "scanCode": 5,
+   "keyCode": 52,
+   "hidValue": "4",
+   "matrixIndex": 25,
+   "matrixIndexes": [
+    25
+   ],
+   "matrixCode": [
+    0,
+    0,
+    33,
+    0
+   ],
+   "fnMatrixCode": [
+    14,
+    0,
+    5,
+    0
+   ],
+   "fnMacMatrixCode": [
+    14,
+    0,
+    5,
+    0
+   ]
+  },
+  {
+   "order": 21,
+   "id": "Digit5",
+   "x": 231,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "5%"
+   ],
+   "hidCode": 34,
+   "hidHex": "0x22",
+   "scanCode": 6,
+   "keyCode": 53,
+   "hidValue": "5",
+   "matrixIndex": 31,
+   "matrixIndexes": [
+    31
+   ],
+   "matrixCode": [
+    0,
+    0,
+    34,
+    0
+   ],
+   "fnMatrixCode": [
+    14,
+    0,
+    6,
+    0
+   ],
+   "fnMacMatrixCode": [
+    14,
+    0,
+    6,
+    0
+   ]
+  },
+  {
+   "order": 22,
+   "id": "Digit6",
+   "x": 277,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "6^"
+   ],
+   "hidCode": 35,
+   "hidHex": "0x23",
+   "scanCode": 7,
+   "keyCode": 54,
+   "hidValue": "6",
+   "matrixIndex": 37,
+   "matrixIndexes": [
+    37
+   ],
+   "matrixCode": [
+    0,
+    0,
+    35,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 23,
+   "id": "Digit7",
+   "x": 323,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "7&"
+   ],
+   "hidCode": 36,
+   "hidHex": "0x24",
+   "scanCode": 8,
+   "keyCode": 55,
+   "hidValue": "7",
+   "matrixIndex": 43,
+   "matrixIndexes": [
+    43
+   ],
+   "matrixCode": [
+    0,
+    0,
+    36,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 24,
+   "id": "Digit8",
+   "x": 369,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "8*"
+   ],
+   "hidCode": 37,
+   "hidHex": "0x25",
+   "scanCode": 9,
+   "keyCode": 56,
+   "hidValue": "8",
+   "matrixIndex": 49,
+   "matrixIndexes": [
+    49
+   ],
+   "matrixCode": [
+    0,
+    0,
+    37,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 25,
+   "id": "Digit9",
+   "x": 415,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "9("
+   ],
+   "hidCode": 38,
+   "hidHex": "0x26",
+   "scanCode": 10,
+   "keyCode": 57,
+   "hidValue": "9",
+   "matrixIndex": 55,
+   "matrixIndexes": [
+    55
+   ],
+   "matrixCode": [
+    0,
+    0,
+    38,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 26,
+   "id": "Digit0",
+   "x": 461,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "0)"
+   ],
+   "hidCode": 39,
+   "hidHex": "0x27",
+   "scanCode": 11,
+   "keyCode": 48,
+   "hidValue": "0",
+   "matrixIndex": 61,
+   "matrixIndexes": [
+    61
+   ],
+   "matrixCode": [
+    0,
+    0,
+    39,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 27,
+   "id": "Minus",
+   "x": 507,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "-_"
+   ],
+   "hidCode": 45,
+   "hidHex": "0x2d",
+   "scanCode": 12,
+   "keyCode": 189,
+   "hidValue": "-",
+   "matrixIndex": 67,
+   "matrixIndexes": [
+    67
+   ],
+   "matrixCode": [
+    0,
+    0,
+    45,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 28,
+   "id": "Equal",
+   "x": 553,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "=+"
+   ],
+   "hidCode": 46,
+   "hidHex": "0x2e",
+   "scanCode": 13,
+   "keyCode": 187,
+   "hidValue": "=",
+   "matrixIndex": 73,
+   "matrixIndexes": [
+    73
+   ],
+   "matrixCode": [
+    0,
+    0,
+    46,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 29,
+   "id": "KeyQ",
+   "x": 73,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Q"
+   ],
+   "hidCode": 20,
+   "hidHex": "0x14",
+   "scanCode": 16,
+   "keyCode": 81,
+   "hidValue": "Q",
+   "matrixIndex": 8,
+   "matrixIndexes": [
+    8
+   ],
+   "matrixCode": [
+    0,
+    0,
+    20,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 30,
+   "id": "KeyW",
+   "x": 119,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "W"
+   ],
+   "hidCode": 26,
+   "hidHex": "0x1a",
+   "scanCode": 17,
+   "keyCode": 87,
+   "hidValue": "W",
+   "matrixIndex": 14,
+   "matrixIndexes": [
+    14
+   ],
+   "matrixCode": [
+    0,
+    0,
+    26,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 31,
+   "id": "KeyE",
+   "x": 165,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "E"
+   ],
+   "hidCode": 8,
+   "hidHex": "0x8",
+   "scanCode": 18,
+   "keyCode": 69,
+   "hidValue": "E",
+   "matrixIndex": 20,
+   "matrixIndexes": [
+    20
+   ],
+   "matrixCode": [
+    0,
+    0,
+    8,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 32,
+   "id": "KeyR",
+   "x": 211,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "R"
+   ],
+   "hidCode": 21,
+   "hidHex": "0x15",
+   "scanCode": 19,
+   "keyCode": 82,
+   "hidValue": "R",
+   "matrixIndex": 26,
+   "matrixIndexes": [
+    26
+   ],
+   "matrixCode": [
+    0,
+    0,
+    21,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 33,
+   "id": "KeyT",
+   "x": 257,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "T"
+   ],
+   "hidCode": 23,
+   "hidHex": "0x17",
+   "scanCode": 20,
+   "keyCode": 84,
+   "hidValue": "T",
+   "matrixIndex": 32,
+   "matrixIndexes": [
+    32
+   ],
+   "matrixCode": [
+    0,
+    0,
+    23,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 34,
+   "id": "KeyY",
+   "x": 303,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Y"
+   ],
+   "hidCode": 28,
+   "hidHex": "0x1c",
+   "scanCode": 21,
+   "keyCode": 89,
+   "hidValue": "Y",
+   "matrixIndex": 38,
+   "matrixIndexes": [
+    38
+   ],
+   "matrixCode": [
+    0,
+    0,
+    28,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 35,
+   "id": "KeyU",
+   "x": 349,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "U"
+   ],
+   "hidCode": 24,
+   "hidHex": "0x18",
+   "scanCode": 22,
+   "keyCode": 85,
+   "hidValue": "U",
+   "matrixIndex": 44,
+   "matrixIndexes": [
+    44
+   ],
+   "matrixCode": [
+    0,
+    0,
+    24,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 36,
+   "id": "KeyI",
+   "x": 395,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "I"
+   ],
+   "hidCode": 12,
+   "hidHex": "0xc",
+   "scanCode": 23,
+   "keyCode": 73,
+   "hidValue": "I",
+   "matrixIndex": 50,
+   "matrixIndexes": [
+    50
+   ],
+   "matrixCode": [
+    0,
+    0,
+    12,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 37,
+   "id": "KeyO",
+   "x": 441,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "O"
+   ],
+   "hidCode": 18,
+   "hidHex": "0x12",
+   "scanCode": 24,
+   "keyCode": 79,
+   "hidValue": "O",
+   "matrixIndex": 56,
+   "matrixIndexes": [
+    56
+   ],
+   "matrixCode": [
+    0,
+    0,
+    18,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 38,
+   "id": "KeyP",
+   "x": 487,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "P"
+   ],
+   "hidCode": 19,
+   "hidHex": "0x13",
+   "scanCode": 25,
+   "keyCode": 80,
+   "hidValue": "P",
+   "matrixIndex": 62,
+   "matrixIndexes": [
+    62
+   ],
+   "matrixCode": [
+    0,
+    0,
+    19,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 39,
+   "id": "BracketLeft",
+   "x": 533,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "[{"
+   ],
+   "hidCode": 47,
+   "hidHex": "0x2f",
+   "scanCode": 26,
+   "keyCode": 219,
+   "hidValue": "[",
+   "matrixIndex": 68,
+   "matrixIndexes": [
+    68
+   ],
+   "matrixCode": [
+    0,
+    0,
+    47,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 40,
+   "id": "BracketRight",
+   "x": 579,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "]}"
+   ],
+   "hidCode": 48,
+   "hidHex": "0x30",
+   "scanCode": 27,
+   "keyCode": 221,
+   "hidValue": "]",
+   "matrixIndex": 74,
+   "matrixIndexes": [
+    74
+   ],
+   "matrixCode": [
+    0,
+    0,
+    48,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 41,
+   "id": "KeyA",
+   "x": 79,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "A"
+   ],
+   "hidCode": 4,
+   "hidHex": "0x4",
+   "scanCode": 30,
+   "keyCode": 65,
+   "hidValue": "A",
+   "matrixIndex": 9,
+   "matrixIndexes": [
+    9
+   ],
+   "matrixCode": [
+    0,
+    0,
+    4,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    5,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    10,
+    5,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 42,
+   "id": "KeyS",
+   "x": 125,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "S"
+   ],
+   "hidCode": 22,
+   "hidHex": "0x16",
+   "scanCode": 31,
+   "keyCode": 83,
+   "hidValue": "S",
+   "matrixIndex": 15,
+   "matrixIndexes": [
+    15
+   ],
+   "matrixCode": [
+    0,
+    0,
+    22,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    5,
+    1,
+    0
+   ],
+   "fnMacMatrixCode": [
+    10,
+    5,
+    1,
+    0
+   ]
+  },
+  {
+   "order": 43,
+   "id": "KeyD",
+   "x": 171,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "D"
+   ],
+   "hidCode": 7,
+   "hidHex": "0x7",
+   "scanCode": 32,
+   "keyCode": 68,
+   "hidValue": "D",
+   "matrixIndex": 21,
+   "matrixIndexes": [
+    21
+   ],
+   "matrixCode": [
+    0,
+    0,
+    7,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 44,
+   "id": "KeyF",
+   "x": 217,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F"
+   ],
+   "hidCode": 9,
+   "hidHex": "0x9",
+   "scanCode": 33,
+   "keyCode": 70,
+   "hidValue": "F",
+   "matrixIndex": 27,
+   "matrixIndexes": [
+    27
+   ],
+   "matrixCode": [
+    0,
+    0,
+    9,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 45,
+   "id": "KeyG",
+   "x": 263,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "G"
+   ],
+   "hidCode": 10,
+   "hidHex": "0xa",
+   "scanCode": 34,
+   "keyCode": 71,
+   "hidValue": "G",
+   "matrixIndex": 33,
+   "matrixIndexes": [
+    33
+   ],
+   "matrixCode": [
+    0,
+    0,
+    10,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 46,
+   "id": "KeyH",
+   "x": 309,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "H"
+   ],
+   "hidCode": 11,
+   "hidHex": "0xb",
+   "scanCode": 35,
+   "keyCode": 72,
+   "hidValue": "H",
+   "matrixIndex": 39,
+   "matrixIndexes": [
+    39
+   ],
+   "matrixCode": [
+    0,
+    0,
+    11,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 47,
+   "id": "KeyJ",
+   "x": 355,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "J"
+   ],
+   "hidCode": 13,
+   "hidHex": "0xd",
+   "scanCode": 36,
+   "keyCode": 74,
+   "hidValue": "J",
+   "matrixIndex": 45,
+   "matrixIndexes": [
+    45
+   ],
+   "matrixCode": [
+    0,
+    0,
+    13,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 48,
+   "id": "KeyK",
+   "x": 401,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "K"
+   ],
+   "hidCode": 14,
+   "hidHex": "0xe",
+   "scanCode": 37,
+   "keyCode": 75,
+   "hidValue": "K",
+   "matrixIndex": 51,
+   "matrixIndexes": [
+    51
+   ],
+   "matrixCode": [
+    0,
+    0,
+    14,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 49,
+   "id": "KeyL",
+   "x": 447,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "L"
+   ],
+   "hidCode": 15,
+   "hidHex": "0xf",
+   "scanCode": 38,
+   "keyCode": 76,
+   "hidValue": "L",
+   "matrixIndex": 57,
+   "matrixIndexes": [
+    57
+   ],
+   "matrixCode": [
+    0,
+    0,
+    15,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 50,
+   "id": "Semicolon",
+   "x": 493,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    ";:"
+   ],
+   "hidCode": 51,
+   "hidHex": "0x33",
+   "scanCode": 39,
+   "keyCode": 186,
+   "hidValue": ";",
+   "matrixIndex": 63,
+   "matrixIndexes": [
+    63
+   ],
+   "matrixCode": [
+    0,
+    0,
+    51,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 51,
+   "id": "Quote",
+   "x": 539,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "‘”"
+   ],
+   "hidCode": 52,
+   "hidHex": "0x34",
+   "scanCode": 40,
+   "keyCode": 222,
+   "hidValue": "'",
+   "matrixIndex": 69,
+   "matrixIndexes": [
+    69
+   ],
+   "matrixCode": [
+    0,
+    0,
+    52,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 52,
+   "id": "ArrowLeft",
+   "x": 600,
+   "y": 240,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "←"
+   ],
+   "hidCode": 80,
+   "hidHex": "0x50",
+   "scanCode": 61003,
+   "keyCode": 37,
+   "hidValue": "←",
+   "matrixIndex": 77,
+   "matrixIndexes": [
+    77
+   ],
+   "matrixCode": [
+    0,
+    0,
+    80,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    3,
+    1,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    3,
+    1,
+    0
+   ]
+  },
+  {
+   "order": 53,
+   "id": "ArrowDown",
+   "x": 646,
+   "y": 240,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "↓"
+   ],
+   "hidCode": 81,
+   "hidHex": "0x51",
+   "scanCode": 61008,
+   "keyCode": 40,
+   "hidValue": "↓",
+   "matrixIndex": 83,
+   "matrixIndexes": [
+    83
+   ],
+   "matrixCode": [
+    0,
+    0,
+    81,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    2,
+    2,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    2,
+    2,
+    0
+   ]
+  },
+  {
+   "order": 54,
+   "id": "ArrowUp",
+   "x": 646,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "↑"
+   ],
+   "hidCode": 82,
+   "hidHex": "0x52",
+   "scanCode": 61000,
+   "keyCode": 38,
+   "hidValue": "↑",
+   "matrixIndex": 82,
+   "matrixIndexes": [
+    82
+   ],
+   "matrixCode": [
+    0,
+    0,
+    82,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    2,
+    1,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    2,
+    1,
+    0
+   ]
+  },
+  {
+   "order": 55,
+   "id": "ArrowRight",
+   "x": 692,
+   "y": 240,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "→"
+   ],
+   "hidCode": 79,
+   "hidHex": "0x4f",
+   "scanCode": 61005,
+   "keyCode": 39,
+   "hidValue": "→",
+   "matrixIndex": 89,
+   "matrixIndexes": [
+    89
+   ],
+   "matrixCode": [
+    0,
+    0,
+    79,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    3,
+    2,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    3,
+    2,
+    0
+   ]
+  },
+  {
+   "order": 56,
+   "id": "KeyZ",
+   "x": 100,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Z"
+   ],
+   "hidCode": 29,
+   "hidHex": "0x1d",
+   "scanCode": 44,
+   "keyCode": 90,
+   "hidValue": "Z",
+   "matrixIndex": 16,
+   "matrixIndexes": [
+    16
+   ],
+   "matrixCode": [
+    0,
+    0,
+    29,
+    0
+   ],
+   "fnMatrixCode": [
+    8,
+    0,
+    4,
+    0
+   ],
+   "fnMacMatrixCode": [
+    8,
+    0,
+    4,
+    0
+   ]
+  },
+  {
+   "order": 57,
+   "id": "KeyX",
+   "x": 146,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "X"
+   ],
+   "hidCode": 27,
+   "hidHex": "0x1b",
+   "scanCode": 45,
+   "keyCode": 88,
+   "hidValue": "X",
+   "matrixIndex": 22,
+   "matrixIndexes": [
+    22
+   ],
+   "matrixCode": [
+    0,
+    0,
+    27,
+    0
+   ],
+   "fnMatrixCode": [
+    8,
+    0,
+    4,
+    1
+   ],
+   "fnMacMatrixCode": [
+    8,
+    0,
+    4,
+    1
+   ]
+  },
+  {
+   "order": 58,
+   "id": "KeyC",
+   "x": 192,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "C"
+   ],
+   "hidCode": 6,
+   "hidHex": "0x6",
+   "scanCode": 46,
+   "keyCode": 67,
+   "hidValue": "C",
+   "matrixIndex": 28,
+   "matrixIndexes": [
+    28
+   ],
+   "matrixCode": [
+    0,
+    0,
+    6,
+    0
+   ],
+   "fnMatrixCode": [
+    8,
+    0,
+    4,
+    2
+   ],
+   "fnMacMatrixCode": [
+    8,
+    0,
+    4,
+    2
+   ]
+  },
+  {
+   "order": 59,
+   "id": "KeyV",
+   "x": 238,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "V"
+   ],
+   "hidCode": 25,
+   "hidHex": "0x19",
+   "scanCode": 47,
+   "keyCode": 86,
+   "hidValue": "V",
+   "matrixIndex": 34,
+   "matrixIndexes": [
+    34
+   ],
+   "matrixCode": [
+    0,
+    0,
+    25,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 60,
+   "id": "KeyB",
+   "x": 284,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "B"
+   ],
+   "hidCode": 5,
+   "hidHex": "0x5",
+   "scanCode": 48,
+   "keyCode": 66,
+   "hidValue": "B",
+   "matrixIndex": 40,
+   "matrixIndexes": [
+    40
+   ],
+   "matrixCode": [
+    0,
+    0,
+    5,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 61,
+   "id": "KeyN",
+   "x": 330,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "N"
+   ],
+   "hidCode": 17,
+   "hidHex": "0x11",
+   "scanCode": 49,
+   "keyCode": 78,
+   "hidValue": "N",
+   "matrixIndex": 46,
+   "matrixIndexes": [
+    46
+   ],
+   "matrixCode": [
+    0,
+    0,
+    17,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 62,
+   "id": "KeyM",
+   "x": 376,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "M"
+   ],
+   "hidCode": 16,
+   "hidHex": "0x10",
+   "scanCode": 50,
+   "keyCode": 77,
+   "hidValue": "M",
+   "matrixIndex": 52,
+   "matrixIndexes": [
+    52
+   ],
+   "matrixCode": [
+    0,
+    0,
+    16,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 63,
+   "id": "Comma",
+   "x": 422,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    ",<"
+   ],
+   "hidCode": 54,
+   "hidHex": "0x36",
+   "scanCode": 51,
+   "keyCode": 188,
+   "hidValue": ",",
+   "matrixIndex": 58,
+   "matrixIndexes": [
+    58
+   ],
+   "matrixCode": [
+    0,
+    0,
+    54,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 64,
+   "id": "Period",
+   "x": 468,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    ".>"
+   ],
+   "hidCode": 55,
+   "hidHex": "0x37",
+   "scanCode": 52,
+   "keyCode": 190,
+   "hidValue": ".",
+   "matrixIndex": 64,
+   "matrixIndexes": [
+    64
+   ],
+   "matrixCode": [
+    0,
+    0,
+    55,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 65,
+   "id": "Slash",
+   "x": 514,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "/?"
+   ],
+   "hidCode": 56,
+   "hidHex": "0x38",
+   "scanCode": 53,
+   "keyCode": 191,
+   "hidValue": "/",
+   "matrixIndex": 70,
+   "matrixIndexes": [
+    70
+   ],
+   "matrixCode": [
+    0,
+    0,
+    56,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 66,
+   "id": "NumLock",
+   "x": 702,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Num"
+   ],
+   "hidCode": 83,
+   "hidHex": "0x53",
+   "scanCode": 69,
+   "keyCode": 144,
+   "hidValue": "Num\nLock",
+   "matrixIndex": 85,
+   "matrixIndexes": [
+    85
+   ],
+   "matrixCode": [
+    0,
+    0,
+    83,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 67,
+   "id": "NumpadDivide",
+   "x": 748,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "/"
+   ],
+   "hidCode": 84,
+   "hidHex": "0x54",
+   "scanCode": 3637,
+   "keyCode": 111,
+   "hidValue": "num_/",
+   "matrixIndex": 91,
+   "matrixIndexes": [
+    91
+   ],
+   "matrixCode": [
+    0,
+    0,
+    84,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 68,
+   "id": "NumpadMultiply",
+   "x": 794,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "*"
+   ],
+   "hidCode": 85,
+   "hidHex": "0x55",
+   "scanCode": 55,
+   "keyCode": 106,
+   "hidValue": "num_*",
+   "matrixIndex": 97,
+   "matrixIndexes": [
+    97
+   ],
+   "matrixCode": [
+    0,
+    0,
+    85,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 69,
+   "id": "Numpad7",
+   "x": 702,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "7",
+    "Home"
+   ],
+   "hidCode": 95,
+   "hidHex": "0x5f",
+   "scanCode": 71,
+   "keyCode": 103,
+   "hidValue": "num_7",
+   "matrixIndex": 86,
+   "matrixIndexes": [
+    86
+   ],
+   "matrixCode": [
+    0,
+    0,
+    95,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 70,
+   "id": "Numpad8",
+   "x": 748,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "8",
+    "↑"
+   ],
+   "hidCode": 96,
+   "hidHex": "0x60",
+   "scanCode": 72,
+   "keyCode": 104,
+   "hidValue": "num_8",
+   "matrixIndex": 92,
+   "matrixIndexes": [
+    92
+   ],
+   "matrixCode": [
+    0,
+    0,
+    96,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 71,
+   "id": "Numpad9",
+   "x": 794,
+   "y": 102,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "9",
+    "PgUp"
+   ],
+   "hidCode": 97,
+   "hidHex": "0x61",
+   "scanCode": 73,
+   "keyCode": 105,
+   "hidValue": "num_9",
+   "matrixIndex": 98,
+   "matrixIndexes": [
+    98
+   ],
+   "matrixCode": [
+    0,
+    0,
+    97,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 72,
+   "id": "Numpad4",
+   "x": 702,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "4",
+    "←"
+   ],
+   "hidCode": 92,
+   "hidHex": "0x5c",
+   "scanCode": 75,
+   "keyCode": 100,
+   "hidValue": "num_4",
+   "matrixIndex": 87,
+   "matrixIndexes": [
+    87
+   ],
+   "matrixCode": [
+    0,
+    0,
+    92,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 73,
+   "id": "Numpad5",
+   "x": 748,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "5"
+   ],
+   "hidCode": 93,
+   "hidHex": "0x5d",
+   "scanCode": 76,
+   "keyCode": 101,
+   "hidValue": "num_5",
+   "matrixIndex": 93,
+   "matrixIndexes": [
+    93
+   ],
+   "matrixCode": [
+    0,
+    0,
+    93,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 74,
+   "id": "Numpad6",
+   "x": 794,
+   "y": 148,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "6",
+    "→"
+   ],
+   "hidCode": 94,
+   "hidHex": "0x5e",
+   "scanCode": 77,
+   "keyCode": 102,
+   "hidValue": "num_6",
+   "matrixIndex": 99,
+   "matrixIndexes": [
+    99
+   ],
+   "matrixCode": [
+    0,
+    0,
+    94,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 75,
+   "id": "Numpad1",
+   "x": 702,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "1",
+    "End"
+   ],
+   "hidCode": 89,
+   "hidHex": "0x59",
+   "scanCode": 79,
+   "keyCode": 97,
+   "hidValue": "num_1",
+   "matrixIndex": 88,
+   "matrixIndexes": [
+    88
+   ],
+   "matrixCode": [
+    0,
+    0,
+    89,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 76,
+   "id": "Numpad2",
+   "x": 748,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "2",
+    "↓"
+   ],
+   "hidCode": 90,
+   "hidHex": "0x5a",
+   "scanCode": 80,
+   "keyCode": 98,
+   "hidValue": "num_2",
+   "matrixIndex": 94,
+   "matrixIndexes": [
+    94
+   ],
+   "matrixCode": [
+    0,
+    0,
+    90,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 77,
+   "id": "Numpad3",
+   "x": 794,
+   "y": 194,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "3",
+    "PgDn"
+   ],
+   "hidCode": 91,
+   "hidHex": "0x5b",
+   "scanCode": 81,
+   "keyCode": 99,
+   "hidValue": "num_3",
+   "matrixIndex": 100,
+   "matrixIndexes": [
+    100
+   ],
+   "matrixCode": [
+    0,
+    0,
+    91,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 78,
+   "id": "NumpadDecimal",
+   "x": 794,
+   "y": 240,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    ".",
+    "Del"
+   ],
+   "hidCode": 99,
+   "hidHex": "0x63",
+   "scanCode": 83,
+   "keyCode": 110,
+   "hidValue": "num_.",
+   "matrixIndex": 101,
+   "matrixIndexes": [
+    101
+   ],
+   "matrixCode": [
+    0,
+    0,
+    99,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 79,
+   "id": "NumpadSubtract",
+   "x": 840,
+   "y": 56,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "-"
+   ],
+   "hidCode": 86,
+   "hidHex": "0x56",
+   "scanCode": 74,
+   "keyCode": 109,
+   "hidValue": "num_-",
+   "matrixIndex": 103,
+   "matrixIndexes": [
+    103
+   ],
+   "matrixCode": [
+    0,
+    0,
+    86,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 80,
+   "id": "Escape",
+   "x": 1,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Esc"
+   ],
+   "hidCode": 41,
+   "hidHex": "0x29",
+   "scanCode": 1,
+   "keyCode": 27,
+   "hidValue": "Esc",
+   "matrixIndex": 0,
+   "matrixIndexes": [
+    0
+   ],
+   "matrixCode": [
+    0,
+    0,
+    41,
+    0
+   ],
+   "fnMatrixCode": [
+    10,
+    2,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    10,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 81,
+   "id": "F1",
+   "x": 59,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F1"
+   ],
+   "hidCode": 58,
+   "hidHex": "0x3a",
+   "scanCode": 59,
+   "keyCode": 112,
+   "hidValue": "F1",
+   "matrixIndex": 6,
+   "matrixIndexes": [
+    6
+   ],
+   "matrixCode": [
+    0,
+    0,
+    58,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    112,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    112,
+    0
+   ]
+  },
+  {
+   "order": 82,
+   "id": "F2",
+   "x": 105,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F2"
+   ],
+   "hidCode": 59,
+   "hidHex": "0x3b",
+   "scanCode": 60,
+   "keyCode": 113,
+   "hidValue": "F2",
+   "matrixIndex": 12,
+   "matrixIndexes": [
+    12
+   ],
+   "matrixCode": [
+    0,
+    0,
+    59,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    111,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    111,
+    0
+   ]
+  },
+  {
+   "order": 83,
+   "id": "F3",
+   "x": 151,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F3"
+   ],
+   "hidCode": 60,
+   "hidHex": "0x3c",
+   "scanCode": 61,
+   "keyCode": 114,
+   "hidValue": "F3",
+   "matrixIndex": 18,
+   "matrixIndexes": [
+    18
+   ],
+   "matrixCode": [
+    0,
+    0,
+    60,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    227,
+    43
+   ],
+   "fnMacMatrixCode": [
+    0,
+    231,
+    225,
+    33
+   ]
+  },
+  {
+   "order": 84,
+   "id": "F4",
+   "x": 197,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F4"
+   ],
+   "hidCode": 61,
+   "hidHex": "0x3d",
+   "scanCode": 62,
+   "keyCode": 115,
+   "hidValue": "F4",
+   "matrixIndex": 24,
+   "matrixIndexes": [
+    24
+   ],
+   "matrixCode": [
+    0,
+    0,
+    61,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    227,
+    8
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    159,
+    2
+   ]
+  },
+  {
+   "order": 85,
+   "id": "F5",
+   "x": 255,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F5"
+   ],
+   "hidCode": 62,
+   "hidHex": "0x3e",
+   "scanCode": 63,
+   "keyCode": 116,
+   "hidValue": "F5",
+   "matrixIndex": 30,
+   "matrixIndexes": [
+    30
+   ],
+   "matrixCode": [
+    0,
+    0,
+    62,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    138,
+    1
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    226,
+    0
+   ]
+  },
+  {
+   "order": 86,
+   "id": "F6",
+   "x": 301,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F6"
+   ],
+   "hidCode": 63,
+   "hidHex": "0x3f",
+   "scanCode": 64,
+   "keyCode": 117,
+   "hidValue": "F6",
+   "matrixIndex": 36,
+   "matrixIndexes": [
+    36
+   ],
+   "matrixCode": [
+    0,
+    0,
+    63,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    35,
+    2
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    234,
+    0
+   ]
+  },
+  {
+   "order": 87,
+   "id": "F7",
+   "x": 347,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F7"
+   ],
+   "hidCode": 64,
+   "hidHex": "0x40",
+   "scanCode": 65,
+   "keyCode": 118,
+   "hidValue": "F7",
+   "matrixIndex": 42,
+   "matrixIndexes": [
+    42
+   ],
+   "matrixCode": [
+    0,
+    0,
+    64,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    182,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    233,
+    0
+   ]
+  },
+  {
+   "order": 88,
+   "id": "F8",
+   "x": 393,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F8"
+   ],
+   "hidCode": 65,
+   "hidHex": "0x41",
+   "scanCode": 66,
+   "keyCode": 119,
+   "hidValue": "F8",
+   "matrixIndex": 48,
+   "matrixIndexes": [
+    48
+   ],
+   "matrixCode": [
+    0,
+    0,
+    65,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    205,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    182,
+    0
+   ]
+  },
+  {
+   "order": 89,
+   "id": "Home",
+   "x": 702,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Home"
+   ],
+   "hidCode": 74,
+   "hidHex": "0x4a",
+   "scanCode": 60999,
+   "keyCode": 36,
+   "hidValue": "Home",
+   "matrixIndex": 84,
+   "matrixIndexes": [
+    84
+   ],
+   "matrixCode": [
+    0,
+    0,
+    74,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    5,
+    1,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    5,
+    1,
+    0
+   ]
+  },
+  {
+   "order": 90,
+   "id": "PageUp",
+   "x": 748,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "PgUp"
+   ],
+   "hidCode": 75,
+   "hidHex": "0x4b",
+   "scanCode": 61001,
+   "keyCode": 33,
+   "hidValue": "Page\nUp",
+   "matrixIndex": 90,
+   "matrixIndexes": [
+    90
+   ],
+   "matrixCode": [
+    0,
+    0,
+    75,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    5,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    5,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 91,
+   "id": "PageDown",
+   "x": 794,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "PgDn"
+   ],
+   "hidCode": 78,
+   "hidHex": "0x4e",
+   "scanCode": 61009,
+   "keyCode": 34,
+   "hidValue": "Page\nDown",
+   "matrixIndex": 96,
+   "matrixIndexes": [
+    96
+   ],
+   "matrixCode": [
+    0,
+    0,
+    78,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 92,
+   "id": "Pause",
+   "x": 840,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Pause"
+   ],
+   "hidCode": 72,
+   "hidHex": "0x48",
+   "scanCode": 3653,
+   "keyCode": 19,
+   "hidValue": "Pause",
+   "matrixIndex": 102,
+   "matrixIndexes": [
+    102
+   ],
+   "matrixCode": [
+    0,
+    0,
+    72,
+    0
+   ],
+   "fnMatrixCode": [
+    13,
+    1,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    13,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "order": 93,
+   "id": "F9",
+   "x": 451,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F9"
+   ],
+   "hidCode": 66,
+   "hidHex": "0x42",
+   "scanCode": 67,
+   "keyCode": 120,
+   "hidValue": "F9",
+   "matrixIndex": 54,
+   "matrixIndexes": [
+    54
+   ],
+   "matrixCode": [
+    0,
+    0,
+    66,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    181,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    205,
+    0
+   ]
+  },
+  {
+   "order": 94,
+   "id": "F10",
+   "x": 497,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F10"
+   ],
+   "hidCode": 67,
+   "hidHex": "0x43",
+   "scanCode": 68,
+   "keyCode": 121,
+   "hidValue": "F10",
+   "matrixIndex": 60,
+   "matrixIndexes": [
+    60
+   ],
+   "matrixCode": [
+    0,
+    0,
+    67,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    226,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    181,
+    0
+   ]
+  },
+  {
+   "order": 95,
+   "id": "F11",
+   "x": 543,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F11"
+   ],
+   "hidCode": 68,
+   "hidHex": "0x44",
+   "scanCode": 87,
+   "keyCode": 122,
+   "hidValue": "F11",
+   "matrixIndex": 66,
+   "matrixIndexes": [
+    66
+   ],
+   "matrixCode": [
+    0,
+    0,
+    68,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    234,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    33,
+    2
+   ]
+  },
+  {
+   "order": 96,
+   "id": "F12",
+   "x": 589,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "F12"
+   ],
+   "hidCode": 69,
+   "hidHex": "0x45",
+   "scanCode": 88,
+   "keyCode": 123,
+   "hidValue": "F12",
+   "matrixIndex": 72,
+   "matrixIndexes": [
+    72
+   ],
+   "matrixCode": [
+    0,
+    0,
+    69,
+    0
+   ],
+   "fnMatrixCode": [
+    3,
+    0,
+    233,
+    0
+   ],
+   "fnMacMatrixCode": [
+    3,
+    0,
+    35,
+    2
+   ]
+  },
+  {
+   "order": 97,
+   "id": "Delete",
+   "x": 646,
+   "y": 1,
+   "width": 40,
+   "height": 40,
+   "type": "key",
+   "displayText": [
+    "Del"
+   ],
+   "hidCode": 76,
+   "hidHex": "0x4c",
+   "scanCode": 61011,
+   "keyCode": 46,
+   "hidValue": "Delete",
+   "matrixIndex": 78,
+   "matrixIndexes": [
+    78
+   ],
+   "matrixCode": [
+    0,
+    0,
+    76,
+    0
+   ],
+   "fnMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "fnMacMatrixCode": [
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ ],
+ "keyOrderArray": {
+  "varName": "B4",
+  "declOffset": 331545,
+  "note": "Array returned by createKeyboardState() for keyLayout===c.Common98_Y98; identical to Object.keys(layout) of the layout chunk.",
+  "equalsObjectKeysOfLayout": false,
+  "value": "Backspace"
+ },
+ "matrix": {
+  "chunk": "530511ba.js",
+  "className": "Yc3123_kk_k98_pro_3m_1k",
+  "recordSize": 4,
+  "entries": 128,
+  "defaultMatrix": [
+   0,
+   0,
+   41,
+   0,
+   0,
+   0,
+   53,
+   0,
+   0,
+   0,
+   43,
+   0,
+   0,
+   0,
+   57,
+   0,
+   0,
+   0,
+   225,
+   0,
+   0,
+   0,
+   224,
+   0,
+   0,
+   0,
+   58,
+   0,
+   0,
+   0,
+   30,
+   0,
+   0,
+   0,
+   20,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   227,
+   0,
+   0,
+   0,
+   59,
+   0,
+   0,
+   0,
+   31,
+   0,
+   0,
+   0,
+   26,
+   0,
+   0,
+   0,
+   22,
+   0,
+   0,
+   0,
+   29,
+   0,
+   0,
+   0,
+   226,
+   0,
+   0,
+   0,
+   60,
+   0,
+   0,
+   0,
+   32,
+   0,
+   0,
+   0,
+   8,
+   0,
+   0,
+   0,
+   7,
+   0,
+   0,
+   0,
+   27,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   61,
+   0,
+   0,
+   0,
+   33,
+   0,
+   0,
+   0,
+   21,
+   0,
+   0,
+   0,
+   9,
+   0,
+   0,
+   0,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   62,
+   0,
+   0,
+   0,
+   34,
+   0,
+   0,
+   0,
+   23,
+   0,
+   0,
+   0,
+   10,
+   0,
+   0,
+   0,
+   25,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   63,
+   0,
+   0,
+   0,
+   35,
+   0,
+   0,
+   0,
+   28,
+   0,
+   0,
+   0,
+   11,
+   0,
+   0,
+   0,
+   5,
+   0,
+   0,
+   0,
+   44,
+   0,
+   0,
+   0,
+   64,
+   0,
+   0,
+   0,
+   36,
+   0,
+   0,
+   0,
+   24,
+   0,
+   0,
+   0,
+   13,
+   0,
+   0,
+   0,
+   17,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   65,
+   0,
+   0,
+   0,
+   37,
+   0,
+   0,
+   0,
+   12,
+   0,
+   0,
+   0,
+   14,
+   0,
+   0,
+   0,
+   16,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   66,
+   0,
+   0,
+   0,
+   38,
+   0,
+   0,
+   0,
+   18,
+   0,
+   0,
+   0,
+   15,
+   0,
+   0,
+   0,
+   54,
+   0,
+   0,
+   0,
+   230,
+   0,
+   0,
+   0,
+   67,
+   0,
+   0,
+   0,
+   39,
+   0,
+   0,
+   0,
+   19,
+   0,
+   0,
+   0,
+   51,
+   0,
+   0,
+   0,
+   55,
+   0,
+   10,
+   1,
+   0,
+   0,
+   0,
+   0,
+   68,
+   0,
+   0,
+   0,
+   45,
+   0,
+   0,
+   0,
+   47,
+   0,
+   0,
+   0,
+   52,
+   0,
+   0,
+   0,
+   56,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   69,
+   0,
+   0,
+   0,
+   46,
+   0,
+   0,
+   0,
+   48,
+   0,
+   0,
+   0,
+   50,
+   0,
+   0,
+   0,
+   229,
+   0,
+   0,
+   0,
+   80,
+   0,
+   0,
+   0,
+   76,
+   0,
+   0,
+   0,
+   42,
+   0,
+   0,
+   0,
+   49,
+   0,
+   0,
+   0,
+   40,
+   0,
+   0,
+   0,
+   82,
+   0,
+   0,
+   0,
+   81,
+   0,
+   0,
+   0,
+   74,
+   0,
+   0,
+   0,
+   83,
+   0,
+   0,
+   0,
+   95,
+   0,
+   0,
+   0,
+   92,
+   0,
+   0,
+   0,
+   89,
+   0,
+   0,
+   0,
+   79,
+   0,
+   0,
+   0,
+   75,
+   0,
+   0,
+   0,
+   84,
+   0,
+   0,
+   0,
+   96,
+   0,
+   0,
+   0,
+   93,
+   0,
+   0,
+   0,
+   90,
+   0,
+   0,
+   0,
+   98,
+   0,
+   0,
+   0,
+   78,
+   0,
+   0,
+   0,
+   85,
+   0,
+   0,
+   0,
+   97,
+   0,
+   0,
+   0,
+   94,
+   0,
+   0,
+   0,
+   91,
+   0,
+   0,
+   0,
+   99,
+   0,
+   0,
+   0,
+   72,
+   0,
+   0,
+   0,
+   86,
+   0,
+   0,
+   0,
+   87,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   88,
+   0,
+   3,
+   0,
+   233,
+   0,
+   3,
+   0,
+   234,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "defaultFnMatrix": [
+   10,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   112,
+   0,
+   14,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   3,
+   0,
+   0,
+   3,
+   0,
+   111,
+   0,
+   14,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   5,
+   1,
+   0,
+   8,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   227,
+   43,
+   14,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   8,
+   0,
+   4,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   227,
+   8,
+   14,
+   0,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   8,
+   0,
+   4,
+   2,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   138,
+   1,
+   14,
+   0,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   35,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   8,
+   0,
+   0,
+   3,
+   0,
+   182,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   205,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   181,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   226,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   234,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   233,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   3,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   9,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   2,
+   1,
+   0,
+   13,
+   2,
+   2,
+   0,
+   13,
+   5,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   3,
+   2,
+   0,
+   13,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "defaultFnMacMatrix": [
+   10,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   112,
+   0,
+   14,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   111,
+   0,
+   14,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   5,
+   1,
+   0,
+   8,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   231,
+   225,
+   33,
+   14,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   8,
+   0,
+   4,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   159,
+   2,
+   14,
+   0,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   8,
+   0,
+   4,
+   2,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   226,
+   0,
+   14,
+   0,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   234,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   8,
+   0,
+   0,
+   3,
+   0,
+   233,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   182,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   205,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   181,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   33,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   35,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   3,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   10,
+   9,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   2,
+   1,
+   0,
+   13,
+   2,
+   2,
+   0,
+   13,
+   5,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   3,
+   2,
+   0,
+   13,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   13,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "COMMONCOLOR": {
+   "0": 16777215,
+   "1": 16711680,
+   "2": 16744192,
+   "3": 16776960,
+   "4": 65280,
+   "5": 65535,
+   "6": 255,
+   "7": 9109759
+  },
+  "recordFormat": "[b0,b1,b2,b3]; matrixToHid(): if b0===0 && b1===0 && b3===0 -> b2 else (b0<<24|b1<<16|b2<<8|b3)>>>0"
+ },
+ "matrixExtraNonZero": [
+  {
+   "i": 75,
+   "g": [
+    0,
+    0,
+    50,
+    0
+   ],
+   "hid": 50
+  },
+  {
+   "i": 108,
+   "g": [
+    3,
+    0,
+    233,
+    0
+   ],
+   "hid": 50391296
+  },
+  {
+   "i": 109,
+   "g": [
+    3,
+    0,
+    234,
+    0
+   ],
+   "hid": 50391552
+  }
+ ],
+ "matrixZeroIndexes": [
+  10,
+  23,
+  29,
+  35,
+  47,
+  53,
+  71,
+  105,
+  106,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127
+ ],
+ "lightLayout": {
+  "expr": "T",
+  "declOffset": 540203,
+  "src": "{isRgb:!0,types:[{type:\"LightWave\",maxValue:4,maxSpeed:4,options:[\"向右\",\"向左\",\"向下\",\"向上\"],rgb:!0,dazzle:!0},{type:\"LightRipple\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightRaindrop\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightSnake\",maxValue:4,maxSpeed:4,options:[\"Z字形\",\"回形\"],rgb:!0,dazzle:!0},{type:\"LightPressAction\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightConverage\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightSineWave\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightKaleidoscope\",maxValue:4,maxSpeed:4,options:[\"向外\",\"向内\"],rgb:!0,dazzle:!0},{type:\"LightPressActionOff\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightLineWave\",maxValue:4,maxSpeed:4,options:[\"向右\",\"向左\"],rgb:!0,dazzle:!0},{type:\"LightLaser\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightCircleWave\",maxValue:4,maxSpeed:4,options:[\"逆时针\",\"顺时针\"],rgb:!0,dazzle:!0},{type:\"LightDazzing\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightRainDown\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightMeteor\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightAlwaysOn\",maxValue:4,rgb:!0,dazzle:!0},{type:\"LightBreath\",maxValue:4,maxSpeed:4,rgb:!0,dazzle:!0},{type:\"LightNeon\",maxValue:4,maxSpeed:4},{type:\"LightUserPicture\",options:[\"图案1\",\"图案2\",\"图案3\",\"图案4\",\"图案5\"],maxValue:4},{type:\"LightMusicFollow2\",options:[\"upright\",\"separate\",\"intersect\"],maxValue:4,rgb:!0,dazzle:!0},{type:\"LightScreenColor\",maxValue:4}]}",
+  "value": {
+   "isRgb": true,
+   "types": [
+    {
+     "type": "LightWave",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "options": [
+      "向右",
+      "向左",
+      "向下",
+      "向上"
+     ],
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightRipple",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightRaindrop",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightSnake",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "options": [
+      "Z字形",
+      "回形"
+     ],
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightPressAction",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightConverage",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightSineWave",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightKaleidoscope",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "options": [
+      "向外",
+      "向内"
+     ],
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightPressActionOff",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightLineWave",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "options": [
+      "向右",
+      "向左"
+     ],
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightLaser",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightCircleWave",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "options": [
+      "逆时针",
+      "顺时针"
+     ],
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightDazzing",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightRainDown",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightMeteor",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightAlwaysOn",
+     "maxValue": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightBreath",
+     "maxValue": 4,
+     "maxSpeed": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightNeon",
+     "maxValue": 4,
+     "maxSpeed": 4
+    },
+    {
+     "type": "LightUserPicture",
+     "options": [
+      "图案1",
+      "图案2",
+      "图案3",
+      "图案4",
+      "图案5"
+     ],
+     "maxValue": 4
+    },
+    {
+     "type": "LightMusicFollow2",
+     "options": [
+      "upright",
+      "separate",
+      "intersect"
+     ],
+     "maxValue": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightScreenColor",
+     "maxValue": 4
+    }
+   ]
+  }
+ },
+ "sideLightLayout": {
+  "expr": "he",
+  "declOffset": 556517,
+  "src": "{isRgb:!0,types:[{type:\"LightWave\",maxValue:4,maxSpeed:3,rgb:!0,dazzle:!0},{type:\"LightSnake\",maxValue:4,maxSpeed:3,rgb:!0,dazzle:!0},{type:\"LightOff\"},{type:\"LightAlwaysOn\",maxValue:4,rgb:!0,dazzle:!0},{type:\"LightBreath\",maxValue:4,maxSpeed:3,rgb:!0,dazzle:!0},{type:\"LightNeon\",maxValue:4,maxSpeed:3}]}",
+  "value": {
+   "isRgb": true,
+   "types": [
+    {
+     "type": "LightWave",
+     "maxValue": 4,
+     "maxSpeed": 3,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightSnake",
+     "maxValue": 4,
+     "maxSpeed": 3,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightOff"
+    },
+    {
+     "type": "LightAlwaysOn",
+     "maxValue": 4,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightBreath",
+     "maxValue": 4,
+     "maxSpeed": 3,
+     "rgb": true,
+     "dazzle": true
+    },
+    {
+     "type": "LightNeon",
+     "maxValue": 4,
+     "maxSpeed": 3
+    }
+   ]
+  }
+ },
+ "raw": {
+  "uiLayoutSrc": "{width:881,height:281,layout:{Backspace:{x:599,y:56,width:87,height:40,type:\"key\",displayText:[\"BackSpace\"]},Tab:{x:1,y:102,width:66,height:40,type:\"key\",displayText:[\"Tab\"]},CapsLock:{x:1,y:148,width:72,height:40,type:\"key\",displayText:[\"Caps\"]},Enter:{x:585,y:148,width:101,height:40,type:\"key\",displayText:[\"Enter\"]},ShiftLeft:{x:1,y:194,width:93,height:40,type:\"key\",displayText:[\"Shift\"]},ShiftRight:{x:560,y:194,width:79,height:40,type:\"key\",displayText:[\"Shift\"]},ControlLeft:{x:1,y:240,width:48,height:40,type:\"key\",displayText:[\"Ctrl\"]},MetaLeft:{x:55,y:240,width:48,height:40,type:\"key\",displayText:[\"Win\"]},AltLeft:{x:109,y:240,width:48,height:40,type:\"key\",displayText:[\"Alt\"]},Space:{x:163,y:240,width:312,height:40,type:\"key\",displayText:[\"Space\"]},AltRight:{x:481,y:240,width:48,height:40,type:\"key\",displayText:[\"Alt\"]},Fn:{x:535,y:240,width:48,height:40,type:\"key\",displayText:[\"Fn\"]},Numpad0:{x:748,y:240,width:40,height:40,type:\"key\",displayText:[\"0\",\"Ins\"]},NumpadAdd:{x:840,y:102,width:40,height:86,type:\"key\",displayText:[\"+\"]},NumpadEnter:{x:840,y:194,width:40,height:86,type:\"key\",displayText:[\"Enter\"]},Backslash:{x:625,y:102,width:61,height:40,type:\"key\",displayText:[\"\\\\|\"]},Backquote:{x:1,y:56,width:40,height:40,type:\"key\",displayText:[\"`~\"]},Digit1:{x:47,y:56,width:40,height:40,type:\"key\",displayText:[\"1!\"]},Digit2:{x:93,y:56,width:40,height:40,type:\"key\",displayText:[\"2@\"]},Digit3:{x:139,y:56,width:40,height:40,type:\"key\",displayText:[\"3#\"]},Digit4:{x:185,y:56,width:40,height:40,type:\"key\",displayText:[\"4$\"]},Digit5:{x:231,y:56,width:40,height:40,type:\"key\",displayText:[\"5%\"]},Digit6:{x:277,y:56,width:40,height:40,type:\"key\",displayText:[\"6^\"]},Digit7:{x:323,y:56,width:40,height:40,type:\"key\",displayText:[\"7&\"]},Digit8:{x:369,y:56,width:40,height:40,type:\"key\",displayText:[\"8*\"]},Digit9:{x:415,y:56,width:40,height:40,type:\"key\",displayText:[\"9(\"]},Digit0:{x:461,y:56,width:40,height:40,type:\"key\",displayText:[\"0)\"]},Minus:{x:507,y:56,width:40,height:40,type:\"key\",displayText:[\"-_\"]},Equal:{x:553,y:56,width:40,height:40,type:\"key\",displayText:[\"=+\"]},KeyQ:{x:73,y:102,width:40,height:40,type:\"key\",displayText:[\"Q\"]},KeyW:{x:119,y:102,width:40,height:40,type:\"key\",displayText:[\"W\"]},KeyE:{x:165,y:102,width:40,height:40,type:\"key\",displayText:[\"E\"]},KeyR:{x:211,y:102,width:40,height:40,type:\"key\",displayText:[\"R\"]},KeyT:{x:257,y:102,width:40,height:40,type:\"key\",displayText:[\"T\"]},KeyY:{x:303,y:102,width:40,height:40,type:\"key\",displayText:[\"Y\"]},KeyU:{x:349,y:102,width:40,height:40,type:\"key\",displayText:[\"U\"]},KeyI:{x:395,y:102,width:40,height:40,type:\"key\",displayText:[\"I\"]},KeyO:{x:441,y:102,width:40,height:40,type:\"key\",displayText:[\"O\"]},KeyP:{x:487,y:102,width:40,height:40,type:\"key\",displayText:[\"P\"]},BracketLeft:{x:533,y:102,width:40,height:40,type:\"key\",displayText:[\"[{\"]},BracketRight:{x:579,y:102,width:40,height:40,type:\"key\",displayText:[\"]}\"]},KeyA:{x:79,y:148,width:40,height:40,type:\"key\",displayText:[\"A\"]},KeyS:{x:125,y:148,width:40,height:40,type:\"key\",displayText:[\"S\"]},KeyD:{x:171,y:148,width:40,height:40,type:\"key\",displayText:[\"D\"]},KeyF:{x:217,y:148,width:40,height:40,type:\"key\",displayText:[\"F\"]},KeyG:{x:263,y:148,width:40,height:40,type:\"key\",displayText:[\"G\"]},KeyH:{x:309,y:148,width:40,height:40,type:\"key\",displayText:[\"H\"]},KeyJ:{x:355,y:148,width:40,height:40,type:\"key\",displayText:[\"J\"]},KeyK:{x:401,y:148,width:40,height:40,type:\"key\",displayText:[\"K\"]},KeyL:{x:447,y:148,width:40,height:40,type:\"key\",displayText:[\"L\"]},Semicolon:{x:493,y:148,width:40,height:40,type:\"key\",displayText:[\";:\"]},Quote:{x:539,y:148,width:40,height:40,type:\"key\",displayText:[\"‘”\"]},ArrowLeft:{x:600,y:240,width:40,height:40,type:\"key\",displayText:[\"←\"]},ArrowDown:{x:646,y:240,width:40,height:40,type:\"key\",displayText:[\"↓\"]},ArrowUp:{x:646,y:194,width:40,height:40,type:\"key\",displayText:[\"↑\"]},ArrowRight:{x:692,y:240,width:40,height:40,type:\"key\",displayText:[\"→\"]},KeyZ:{x:100,y:194,width:40,height:40,type:\"key\",displayText:[\"Z\"]},KeyX:{x:146,y:194,width:40,height:40,type:\"key\",displayText:[\"X\"]},KeyC:{x:192,y:194,width:40,height:40,type:\"key\",displayText:[\"C\"]},KeyV:{x:238,y:194,width:40,height:40,type:\"key\",displayText:[\"V\"]},KeyB:{x:284,y:194,width:40,height:40,type:\"key\",displayText:[\"B\"]},KeyN:{x:330,y:194,width:40,height:40,type:\"key\",displayText:[\"N\"]},KeyM:{x:376,y:194,width:40,height:40,type:\"key\",displayText:[\"M\"]},Comma:{x:422,y:194,width:40,height:40,type:\"key\",displayText:[\",<\"]},Period:{x:468,y:194,width:40,height:40,type:\"key\",displayText:[\".>\"]},Slash:{x:514,y:194,width:40,height:40,type:\"key\",displayText:[\"/?\"]},NumLock:{x:702,y:56,width:40,height:40,type:\"key\",displayText:[\"Num\"]},NumpadDivide:{x:748,y:56,width:40,height:40,type:\"key\",displayText:[\"/\"]},NumpadMultiply:{x:794,y:56,width:40,height:40,type:\"key\",displayText:[\"*\"]},Numpad7:{x:702,y:102,width:40,height:40,type:\"key\",displayText:[\"7\",\"Home\"]},Numpad8:{x:748,y:102,width:40,height:40,type:\"key\",displayText:[\"8\",\"↑\"]},Numpad9:{x:794,y:102,width:40,height:40,type:\"key\",displayText:[\"9\",\"PgUp\"]},Numpad4:{x:702,y:148,width:40,height:40,type:\"key\",displayText:[\"4\",\"←\"]},Numpad5:{x:748,y:148,width:40,height:40,type:\"key\",displayText:[\"5\"]},Numpad6:{x:794,y:148,width:40,height:40,type:\"key\",displayText:[\"6\",\"→\"]},Numpad1:{x:702,y:194,width:40,height:40,type:\"key\",displayText:[\"1\",\"End\"]},Numpad2:{x:748,y:194,width:40,height:40,type:\"key\",displayText:[\"2\",\"↓\"]},Numpad3:{x:794,y:194,width:40,height:40,type:\"key\",displayText:[\"3\",\"PgDn\"]},NumpadDecimal:{x:794,y:240,width:40,height:40,type:\"key\",displayText:[\".\",\"Del\"]},NumpadSubtract:{x:840,y:56,width:40,height:40,type:\"key\",displayText:[\"-\"]},Escape:{x:1,y:1,width:40,height:40,type:\"key\",displayText:[\"Esc\"]},F1:{x:59,y:1,width:40,height:40,type:\"key\",displayText:[\"F1\"]},F2:{x:105,y:1,width:40,height:40,type:\"key\",displayText:[\"F2\"]},F3:{x:151,y:1,width:40,height:40,type:\"key\",displayText:[\"F3\"]},F4:{x:197,y:1,width:40,height:40,type:\"key\",displayText:[\"F4\"]},F5:{x:255,y:1,width:40,height:40,type:\"key\",displayText:[\"F5\"]},F6:{x:301,y:1,width:40,height:40,type:\"key\",displayText:[\"F6\"]},F7:{x:347,y:1,width:40,height:40,type:\"key\",displayText:[\"F7\"]},F8:{x:393,y:1,width:40,height:40,type:\"key\",displayText:[\"F8\"]},Home:{x:702,y:1,width:40,height:40,type:\"key\",displayText:[\"Home\"]},PageUp:{x:748,y:1,width:40,height:40,type:\"key\",displayText:[\"PgUp\"]},PageDown:{x:794,y:1,width:40,height:40,type:\"key\",displayText:[\"PgDn\"]},Pause:{x:840,y:1,width:40,height:40,type:\"key\",displayText:[\"Pause\"]},F9:{x:451,y:1,width:40,height:40,type:\"key\",displayText:[\"F9\"]},F10:{x:497,y:1,width:40,height:40,type:\"key\",displayText:[\"F10\"]},F11:{x:543,y:1,width:40,height:40,type:\"key\",displayText:[\"F11\"]},F12:{x:589,y:1,width:40,height:40,type:\"key\",displayText:[\"F12\"]},Delete:{x:646,y:1,width:40,height:40,type:\"key\",displayText:[\"Del\"]}}}",
+  "defaultMatrixSrc": "[0,0,41,0,0,0,53,0,0,0,43,0,0,0,57,0,0,0,225,0,0,0,224,0,0,0,58,0,0,0,30,0,0,0,20,0,0,0,4,0,0,0,0,0,0,0,227,0,0,0,59,0,0,0,31,0,0,0,26,0,0,0,22,0,0,0,29,0,0,0,226,0,0,0,60,0,0,0,32,0,0,0,8,0,0,0,7,0,0,0,27,0,0,0,0,0,0,0,61,0,0,0,33,0,0,0,21,0,0,0,9,0,0,0,6,0,0,0,0,0,0,0,62,0,0,0,34,0,0,0,23,0,0,0,10,0,0,0,25,0,0,0,0,0,0,0,63,0,0,0,35,0,0,0,28,0,0,0,11,0,0,0,5,0,0,0,44,0,0,0,64,0,0,0,36,0,0,0,24,0,0,0,13,0,0,0,17,0,0,0,0,0,0,0,65,0,0,0,37,0,0,0,12,0,0,0,14,0,0,0,16,0,0,0,0,0,0,0,66,0,0,0,38,0,0,0,18,0,0,0,15,0,0,0,54,0,0,0,230,0,0,0,67,0,0,0,39,0,0,0,19,0,0,0,51,0,0,0,55,0,10,1,0,0,0,0,68,0,0,0,45,0,0,0,47,0,0,0,52,0,0,0,56,0,0,0,0,0,0,0,69,0,0,0,46,0,0,0,48,0,0,0,50,0,0,0,229,0,0,0,80,0,0,0,76,0,0,0,42,0,0,0,49,0,0,0,40,0,0,0,82,0,0,0,81,0,0,0,74,0,0,0,83,0,0,0,95,0,0,0,92,0,0,0,89,0,0,0,79,0,0,0,75,0,0,0,84,0,0,0,96,0,0,0,93,0,0,0,90,0,0,0,98,0,0,0,78,0,0,0,85,0,0,0,97,0,0,0,94,0,0,0,91,0,0,0,99,0,0,0,72,0,0,0,86,0,0,0,87,0,0,0,0,0,0,0,0,0,0,0,88,0,3,0,233,0,3,0,234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+  "defaultFnMatrixSrc": "[10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,112,0,14,0,0,0,0,0,0,0,10,5,0,0,0,0,0,0,10,3,0,0,3,0,111,0,14,0,1,0,0,0,0,0,10,5,1,0,8,0,4,0,0,0,0,0,0,0,227,43,14,0,2,0,0,0,0,0,0,0,0,0,8,0,4,1,0,0,0,0,0,0,227,8,14,0,5,0,0,0,0,0,0,0,0,0,8,0,4,2,0,0,0,0,3,0,138,1,14,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,35,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,8,0,0,3,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,226,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,233,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3,1,0,0,0,0,0,10,9,0,0,0,0,0,0,0,0,0,0,13,2,1,0,13,2,2,0,13,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3,2,0,13,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+  "defaultFnMacMatrixSrc": "[10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,112,0,14,0,0,0,0,0,0,0,10,5,0,0,0,0,0,0,0,0,0,0,3,0,111,0,14,0,1,0,0,0,0,0,10,5,1,0,8,0,4,0,0,0,0,0,0,231,225,33,14,0,2,0,0,0,0,0,0,0,0,0,8,0,4,1,0,0,0,0,3,0,159,2,14,0,5,0,0,0,0,0,0,0,0,0,8,0,4,2,0,0,0,0,3,0,226,0,14,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,8,0,0,3,0,233,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,33,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,35,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3,1,0,0,0,0,0,10,9,0,0,0,0,0,0,0,0,0,0,13,2,1,0,13,2,2,0,13,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,3,2,0,13,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]",
+  "COMMONCOLORSrc": "{0:16777215,1:16711680,2:16744192,3:16776960,4:65280,5:65535,6:255,7:9109759}"
+ },
+ "_ln_check": {
+  "note": "Zp(keyLayout) resolves geometry through LN={...SN,...CN} (index.630fe4af.js @1409241, Zp @1409306).",
+  "LN_size": 131,
+  "LN[c.Common98_Y98]": null,
+  "LN[c.Common98_Y98PRO]": "keyboard_98_y98pro_v2_keymappings_ui_info",
+  "y98_entries_in_LN": {
+   "常规98键 Y98PRO,knob": "keyboard_98_y98pro_v2_keymappings_ui_info"
+  },
+  "conclusion": "c.Common98_Y98 (the K98PRO keyLayout) has NO entry in LN -> Zp throws 未找到键盘布局 常规98键 Y98 的映射. The geometry chunk 2714b259.js is still shipped and its Object.keys(layout) equals B4 exactly."
+ },
+ "relatedLayouts": {
+  "keyboard_98_y98pro_keymappings_ui_info": {
+   "chunk": "850dfb67.js",
+   "width": 911,
+   "height": 299
+  },
+  "keyboard_98_y98pro_v2_keymappings_ui_info": {
+   "chunk": "39d54467.js",
+   "width": 954,
+   "height": 286
+  },
+  "keyboard_98_y98b_keymappings_ui_info": {
+   "chunk": "b721d8b4.js",
+   "width": 904,
+   "height": 281
+  }
+ }
+}

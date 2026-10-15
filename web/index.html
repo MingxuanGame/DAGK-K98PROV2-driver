@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================================================================
+     SEO / 分享卡片
+     注意：下面写死的域名是 dagk.mxgame.top
+     换域名部署时，把本文件里所有 https://dagk.mxgame.top 一起替换掉
+     （另外还要改 ./sitemap.xml 和 ./robots.txt）
+     =================================================================== -->
+<title>DAGK K98 PRO V2 网页驱动 · 免安装改键 / 灯效 / 宏（WebHID）</title>
+<meta name="description" content="DAGK K98 PRO V2 键盘的免安装网页驱动：用 Chrome / Edge 打开即可改键、调灯效、录宏、读写三档板载配置，支持有线（3151:5002）与 2.4G 接收器（3151:5006），界面复刻原厂驱动。" />
+<meta name="keywords" content="DAGK K98 PRO V2,K98PRO 驱动,键盘网页驱动,免安装键盘驱动,WebHID,改键工具,键盘灯效,宏编辑,板载配置,DAGK Driver" />
+<meta name="author" content="MingxuanGame" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#3E3E34" />
+<link rel="canonical" href="https://dagk.mxgame.top/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DAGK K98 PRO V2 网页驱动" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:title" content="DAGK K98 PRO V2 网页驱动 · 免安装改键 / 灯效 / 宏" />
+<meta property="og:description" content="用浏览器直接配置 DAGK K98 PRO V2：改键、灯效、宏、三档板载，支持有线与 2.4G 接收器。复刻原厂驱动界面，无需安装任何软件。" />
+<meta property="og:url" content="https://dagk.mxgame.top/" />
+<meta property="og:image" content="https://dagk.mxgame.top/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="DAGK K98 PRO V2 网页驱动界面" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="DAGK K98 PRO V2 网页驱动 · 免安装改键 / 灯效 / 宏" />
+<meta name="twitter:description" content="用浏览器直接配置 DAGK K98 PRO V2：改键、灯效、宏、三档板载，支持有线与 2.4G 接收器。复刻原厂驱动界面，无需安装任何软件。" />
+<meta name="twitter:image" content="https://dagk.mxgame.top/assets/og-cover.png" />
+
+<link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+<link rel="icon" type="image/png" sizes="192x192" href="./assets/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+<link rel="manifest" href="./site.webmanifest" />
+
+<link rel="stylesheet" href="./css/style.css" />
+
+<!-- 结构化数据：告诉搜索引擎这是"免费的网络应用（键盘配置工具）" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DAGK K98 PRO V2 网页驱动",
+  "alternateName": ["DAGK K98PRO Web Driver", "DAGK K98 PRO V2 网页版驱动"],
+  "url": "https://dagk.mxgame.top/",
+  "description": "DAGK K98 PRO V2 键盘的免安装网页驱动：用 Chrome / Edge 打开即可改键、调灯效、录宏、读写三档板载配置，支持有线（3151:5002）与 2.4G 接收器（3151:5006），界面复刻原厂驱动。",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "键盘驱动 / Keyboard Configuration",
+  "operatingSystem": "Windows, macOS, Linux",
+  "browserRequirements": "需要支持 WebHID 的浏览器：Chrome / Edge 89 及以上",
+  "inLanguage": "zh-CN",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+  "license": "https://github.com/MingxuanGame/DAGK-K98PROV2-driver/blob/main/LICENSE",
+  "codeRepository": "https://github.com/MingxuanGame/DAGK-K98PROV2-driver",
+  "author": { "@type": "Person", "name": "MingxuanGame" },
+  "screenshot": "https://dagk.mxgame.top/assets/og-cover.png",
+  "featureList": [
+    "改键：组合键 / 宏 / 功能键 / 禁用按键 / 扩展区多媒体与系统键",
+    "三档板载配置的读取与写入",
+    "Fn 层改键（Win / Mac 两套系统）",
+    "宏编辑：按下 / 抬起 / 延时 / 鼠标动作，循环次数与固定间隔",
+    "灯光设置：21 种主灯效、侧灯灯带、单键背光",
+    "设备设置：回报率、去抖、系统模式、WASD 互换、休眠时间",
+    "配置导入导出与本地多套配置保存",
+    "键盘测试、实时日志与掉线提醒"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ 无 JS / 爬虫兜底（正常情况下不显示） ============ -->
+<noscript>
+  <div style="max-width:760px;margin:0 auto;padding:56px 24px;background:#1b1b1b;color:#e8e8e8;min-height:100vh;line-height:1.9;font-family:system-ui,'Microsoft YaHei',sans-serif">
+    <p style="font-size:26px;color:#74ebd5;margin:0 0 12px"><strong>DAGK K98 PRO V2 网页驱动</strong></p>
+    <p>这是一个免安装的键盘配置工具：用 Chrome / Edge 打开本页，就能给 <b>DAGK K98 PRO V2</b> 键盘改键、
+       调节灯效、编辑宏、读写三档板载配置，支持 USB 有线与 2.4G 接收器。</p>
+    <p>本页需要 JavaScript 才能运行（通信依赖浏览器 WebHID 接口）。请在浏览器里启用 JavaScript 后刷新，
+       并使用 <b>Chrome / Edge 89+</b> 打开。</p>
+    <p>开源地址：<a href="https://github.com/MingxuanGame/DAGK-K98PROV2-driver" style="color:#74ebd5">github.com/MingxuanGame/DAGK-K98PROV2-driver</a></p>
+  </div>
+</noscript>
+
+<!-- ============ 设备掉线提醒（系统通知 + 页面横幅） ============ -->
+<div class="lost-banner hidden" id="lostBanner">
+  <span class="lb-title">⚠ 设备已掉线，需要重新插拔接收器</span>
+  <span class="lb-reason" id="lostReason"></span>
+  <button class="btn" id="lostRetry">我已重新插好，重试</button>
+</div>
+
+<!-- ============ 欢迎 / 搜索设备页 ============ -->
+<div class="welcome-page" id="welcome">
+  <div class="welcome-inner">
+    <img class="welcome-logo" src="./assets/logo-default.png" alt="DAGK K98 PRO V2 网页驱动" />
+    <h1 class="welcome-title">欢迎使用</h1>
+    <div class="welcome-sub">DAGK Driver</div>
+    <div class="welcome-status" id="welcomeStatus">设备搜索中...</div>
+    <div class="welcome-actions">
+      <button class="btn btn-confirm" id="btnWired">连接有线键盘</button>
+      <button class="btn btn-gray" id="btnDongle">连接 2.4G 接收器</button>
+    </div>
+    <div class="welcome-hint">首次使用请先在弹窗中选择设备；浏览器需要 Chrome / Edge 89+</div>
+    <div class="welcome-ver">V : 3.2.15</div>
+  </div>
+</div>
+
+<!-- ============ 主界面 ============ -->
+<div class="app-main hidden" id="appMain">
+  <!-- 顶部栏（原厂 69px）：左设备下拉 / 中拖拽区 / 右「读取设备配置」 -->
+  <header class="topnav">
+    <div class="topnav-left">
+      <button class="dev-select" id="devSelect">
+        <span class="dev-globe"></span>
+        <span class="dev-name" id="devName">自动识别</span>
+        <span class="dev-caret"></span>
+      </button>
+      <div class="dev-menu hidden" id="devMenu">
+        <div class="dev-menu-item" data-dev="wired">有线 · K98PRO (3151:5002)</div>
+        <div class="dev-menu-item" data-dev="dongle">2.4G 接收器 (3151:5006)</div>
+        <div class="dev-menu-sep"></div>
+        <div class="dev-menu-item" id="btnWired2">连接有线键盘</div>
+        <div class="dev-menu-item" id="btnDongle2">连接 2.4G 接收器</div>
+        <div class="dev-menu-item danger" id="btnDisconnect">断开当前设备</div>
+      </div>
+      <span class="device-pill" id="statusPill">未连接</span>
+      <span class="device-name" id="connSub"></span>
+    </div>
+    <div class="topnav-drag"></div>
+    <div class="topnav-right">
+      <span class="dirty-badge hidden" id="dirtyBadge" title="这些改动还在浏览器里，没写入键盘；刷新/关闭页面前记得点「写入设备」">有改动未写入</span>
+      <button class="btn-readcfg" id="btnReadCfg">读取设备配置</button>
+      <span class="help-dot" id="helpDot" title="帮助">?</span>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <!-- 侧栏（原厂 265px + zoom .8333，底色 #3E3E34） -->
+    <nav class="sidenav" id="sidenav">
+      <div class="sidenav-logo"><img src="./assets/logo-default.png" alt="DAGK" /></div>
+      <button class="navitem active" data-tab="keymap">键盘设置</button>
+      <button class="navitem" data-tab="fn">Fn层设置</button>
+      <button class="navitem" data-tab="macro">宏编辑</button>
+      <button class="navitem" data-tab="light">灯光设置</button>
+      <button class="navitem" data-tab="more">更多</button>
+      <div class="sidenav-dev">
+        <div class="sd-name" id="sideDevName">K98PRO</div>
+        <div class="sd-thumb"></div>
+        <div class="sd-foot">
+          <span class="conn-dot" id="connDot"></span>
+          <span id="connText">未连接</span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="content">
+      <!-- ================= 键盘设置 ================= -->
+      <section class="panel" id="tab-keymap" data-kb="main">
+        <div class="ptabs">
+          <button class="ptab on" data-ptab="custom">自定义按键</button>
+          <button class="ptab" data-ptab="other">其他设置</button>
+          <button class="ptab" data-ptab="adv">高级键</button>
+        </div>
+
+        <div class="pbody" data-pbody="custom">
+          <div class="kbrow">
+            <div class="kbwrap" data-role="kbWrap">
+              <div class="kbstage" data-role="kbStage"></div>
+            </div>
+            <aside class="kbtools">
+              <div class="legend">
+                <span class="lg"><i class="sw changed"></i>按键已修改</span>
+                <span class="lg"><i class="sw forbidden"></i>按键已禁用</span>
+                <span class="lg" data-role="lgSystem" hidden><i class="sw system"></i>系统按键</span>
+              </div>
+              <label class="field">板载
+                <select data-role="layerSel"></select>
+              </label>
+              <button class="btn btn-confirm btn-xs" data-role="btnSetProfile">把这一档设为键盘当前板载</button>
+              <button class="btn btn-gray" data-role="btnResetKey" disabled>恢复按键</button>
+              <button class="btn btn-gray btn-xs" data-role="btnScan">扫描全部层</button>
+              <button class="btn btn-confirm btn-xs" data-role="btnWrite" disabled>写入设备</button>
+            </aside>
+          </div>
+          <div class="keyedit" data-role="keyedit"></div>
+          <div class="hint" data-role="hint"></div>
+        </div>
+
+        <div class="pbody hidden" data-pbody="other">
+          <div class="sec-title">睡眠时间</div>
+          <div class="sleep-grid" data-role="sleepGrid"></div>
+          <div class="danger-note">*设置为0则不进入待机</div>
+          <div class="row">
+            <button class="btn btn-confirm" data-role="btnSleepRead">读取设备配置</button>
+            <button class="btn btn-confirm" data-role="btnSleepWrite">写入设备</button>
+          </div>
+          <div class="hint" data-role="sleepHint">原厂这里的单位是分钟；页面里按 秒 与设备交互。</div>
+        </div>
+
+        <div class="pbody hidden" data-pbody="adv">
+          <div class="sec-title">SnapKey 绑定</div>
+          <div class="hint">绑定 2 个选定的按键，当两个按键被同时按下时，以最后按下的按键为准。</div>
+          <div class="row">
+            <span class="snap-slot" data-role="snap1">未选择按键</span>
+            <span class="snap-slot" data-role="snap2">未选择按键</span>
+            <button class="btn btn-confirm" data-role="btnSnapApply">确认</button>
+          </div>
+          <div class="hint" data-role="snapHint">先在左边键盘图上点一个键，再点「按键1 / 按键2」把它填进去。</div>
+        </div>
+      </section>
+
+      <!-- ================= Fn层设置 ================= -->
+      <section class="panel hidden" id="tab-fn" data-kb="fn">
+        <div class="ptabs">
+          <button class="ptab on" data-ptab="custom">自定义按键</button>
+          <button class="ptab" data-ptab="other">组合键</button>
+          <button class="ptab" data-ptab="adv">宏设置</button>
+        </div>
+        <div class="pbody" data-pbody="custom">
+          <div class="kbrow">
+            <div class="kbwrap" data-role="kbWrap">
+              <div class="kbstage" data-role="kbStage"></div>
+            </div>
+            <aside class="kbtools">
+              <div class="legend">
+                <span class="lg"><i class="sw changed"></i>按键已修改</span>
+                <span class="lg"><i class="sw system"></i>系统按键</span>
+              </div>
+              <label class="field">Fn板载
+                <select data-role="layerSel"></select>
+              </label>
+              <label class="field">系统
+                <select data-role="fnSysSel">
+                  <option value="win">Win</option>
+                  <option value="mac">Mac</option>
+                </select>
+              </label>
+              <button class="btn btn-confirm btn-xs" data-role="btnSetProfile">把这一档设为键盘当前板载</button>
+              <button class="btn btn-gray" data-role="btnResetKey" disabled>恢复按键</button>
+              <button class="btn btn-confirm btn-xs" data-role="btnWrite" disabled>写入设备</button>
+            </aside>
+          </div>
+          <div class="keyedit" data-role="keyedit"></div>
+          <div class="hint" data-role="hint"></div>
+        </div>
+        <div class="pbody hidden" data-pbody="other">
+          <div class="hint">Fn 层的组合键改法与主键盘一致：在左边键盘图上选键 → 在下面的改键面板里选「组合键」。</div>
+        </div>
+        <div class="pbody hidden" data-pbody="adv">
+          <div class="hint">Fn 层的宏设置：在左边键盘图上选键 → 改键面板里选「宏」。</div>
+        </div>
+      </section>
+
+      <!-- ================= 宏编辑 ================= -->
+      <section class="panel hidden" id="tab-macro">
+        <div class="sec-title">宏编辑</div>
+        <div class="row">
+          <button class="btn btn-gray" id="btnMacroNew">新建宏</button>
+          <label class="field">宏槽位 <select id="macroSlot"></select></label>
+          <label class="field">循环次数 <input type="number" id="macroRepeat" min="0" max="65535" value="1" /></label>
+          <label class="field">固定间隔 <input type="number" id="macroFixed" value="1" disabled /></label>
+          <span class="hint">ms</span>
+        </div>
+        <div class="row">
+          <button class="btn btn-gray togglable" id="btnMacroToggle">使用指派按键切换开关播放</button>
+          <button class="btn btn-gray togglable" id="btnMacroPress">按下播放</button>
+          <button class="btn btn-gray" id="btnMacroRecord">开始录制</button>
+          <button class="btn btn-confirm" id="btnMacroRead">读取设备配置</button>
+          <button class="btn btn-confirm" id="btnMacroWrite">写入设备</button>
+        </div>
+        <div class="macrosteps" id="macroSteps"></div>
+        <div class="row">
+          <button class="btn btn-gray" id="btnMacroAddKeyDown">+ 按下</button>
+          <button class="btn btn-gray" id="btnMacroAddKeyUp">+ 抬起</button>
+          <button class="btn btn-gray" id="btnMacroAddDelay">+ 延时</button>
+          <button class="btn btn-gray" id="btnMacroAddMouse">+ 鼠标</button>
+          <button class="btn btn-gray" id="btnMacroClear">清空</button>
+          <button class="btn btn-confirm" id="btnMacroSave">保存</button>
+        </div>
+        <div class="hint">* 设置完成之后请点击保存按钮保存宏；随后在「键盘设置」里把某个按键设为该宏槽位。</div>
+      </section>
+
+      <!-- ================= 灯光设置 ================= -->
+      <section class="panel hidden" id="tab-light">
+        <div class="ptabs">
+          <button class="ptab on" data-ptab="light">灯光</button>
+          <button class="ptab" data-ptab="edit">灯光编辑</button>
+          <button class="ptab" data-ptab="strip">灯带</button>
+        </div>
+
+        <div class="pbody" data-pbody="light">
+          <div class="light-panel">
+            <div class="lp-col lp-effects-col">
+              <div class="lp-title">灯效</div>
+              <div class="lp-effects" id="lightEffects"></div>
+            </div>
+            <div class="lp-col lp-opts-col">
+              <div class="lp-sec">
+                <div class="lp-title">颜色</div>
+                <div class="lp-opts" id="lightColorOpts">
+                  <button class="lp-opt" data-c="dazzle">炫彩</button>
+                  <button class="lp-opt" data-c="custom">自定义色彩</button>
+                </div>
+                <div class="lp-swatches" id="lightSwatches"></div>
+              </div>
+              <div class="lp-sec">
+                <div class="lp-title">灯光亮度</div>
+                <div class="lp-slider">
+                  <span class="lp-end">暗</span><span class="lp-end-n" id="lightBrightVal">0</span>
+                  <input type="range" id="lightBright" min="0" max="4" step="1" />
+                  <span class="lp-end-n">4</span><span class="lp-end">亮</span>
+                </div>
+              </div>
+              <div class="lp-sec">
+                <div class="lp-title">灯光速度</div>
+                <div class="lp-slider">
+                  <span class="lp-end">慢</span><span class="lp-end-n" id="lightSpeedVal">0</span>
+                  <input type="range" id="lightSpeed" min="0" max="4" step="1" />
+                  <span class="lp-end-n">4</span><span class="lp-end">快</span>
+                </div>
+              </div>
+              <div class="lp-sec">
+                <div class="lp-title">灯光播放模式</div>
+                <select class="lp-select" id="lightOption">
+                  <option value="0">无</option>
+                  <option value="1">图案1</option><option value="2">图案2</option><option value="3">图案3</option>
+                  <option value="4">图案4</option><option value="5">图案5</option>
+                </select>
+              </div>
+              <label class="check" hidden><input type="checkbox" id="lightDazzle" /> 多彩（闪耀）</label>
+              <label class="field" hidden>颜色 <input type="color" id="lightColor" /></label>
+              <div class="row">
+                <button class="btn btn-confirm" id="btnLightRead">读取设备配置</button>
+                <button class="btn btn-confirm" id="btnLightApply">写入设备</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pbody hidden" data-pbody="strip">
+          <div class="light-panel">
+            <div class="lp-col lp-effects-col">
+              <div class="lp-title">灯效</div>
+              <div class="lp-effects" id="sideEffects"></div>
+            </div>
+            <div class="lp-col lp-opts-col">
+              <div class="lp-sec">
+                <div class="lp-title">颜色</div>
+                <div class="lp-opts" id="sideColorOpts">
+                  <button class="lp-opt" data-c="dazzle">炫彩</button>
+                  <button class="lp-opt" data-c="custom">自定义色彩</button>
+                </div>
+                <div class="lp-swatches" id="sideSwatches"></div>
+              </div>
+              <div class="lp-sec">
+                <div class="lp-title">灯光亮度</div>
+                <div class="lp-slider">
+                  <span class="lp-end">暗</span><span class="lp-end-n" id="sideBrightVal">0</span>
+                  <input type="range" id="sideBright" min="0" max="4" step="1" />
+                  <span class="lp-end-n">4</span><span class="lp-end">亮</span>
+                </div>
+              </div>
+              <div class="lp-sec">
+                <div class="lp-title">灯光速度</div>
+                <div class="lp-slider">
+                  <span class="lp-end">慢</span><span class="lp-end-n" id="sideSpeedVal">0</span>
+                  <input type="range" id="sideSpeed" min="0" max="4" step="1" />
+                  <span class="lp-end-n">4</span><span class="lp-end">快</span>
+                </div>
+              </div>
+              <label class="check" hidden><input type="checkbox" id="sideDazzle" /> 多彩（闪耀）</label>
+              <label class="field" hidden>颜色 <input type="color" id="sideColor" /></label>
+              <div class="row">
+                <button class="btn btn-confirm" id="btnSideRead">读取设备配置</button>
+                <button class="btn btn-confirm" id="btnSideApply">写入设备</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pbody hidden" data-pbody="edit">
+          <div class="toolbar">
+            <button class="btn btn-confirm" id="btnPicRead">读取设备配置</button>
+            <button class="btn btn-confirm" id="btnPicWrite">写入设备</button>
+            <button class="btn btn-gray" id="btnPicFill">全部填充</button>
+            <button class="btn btn-gray" id="btnPicClear">全部熄灭</button>
+            <label class="field">画笔颜色 <input type="color" id="picColor" value="#ff0000" /></label>
+          </div>
+          <div class="kbwrap" id="picWrap"><div class="kbstage" id="picStage"></div></div>
+          <div class="hint">需先把主灯效设置为「自定义（LightUserPicture）」才会显示单键背光。</div>
+        </div>
+      </section>
+
+      <!-- ================= 更多 ================= -->
+      <section class="panel hidden" id="tab-more">
+        <div class="card">
+          <div class="card-title">更新</div>
+          <div class="row">
+            <span class="hint" id="fwVersion">固件版本：—</span>
+            <button class="btn btn-link" id="btnFwOpen">固件升级</button>
+          </div>
+          <div class="notice notice-warn" id="fwBox">
+            <b>固件升级前请拔掉 2.4G 接收器，并连接数据线确保设备处于有线模式再进行升级</b>
+            <ul>
+              <li>✅ <b>有线 USB</b>：支持刷写（这是原厂驱动唯一的刷写路径）。</li>
+              <li>❌ <b>2.4G 无线</b>：不可行。接收器只能转发 64 字节配置报文，无法让键盘重新枚举成 Bootloader。</li>
+              <li>❌ <b>蓝牙</b>：不可行。且浏览器拿不到键盘的 HID 集合。</li>
+            </ul>
+            <p class="hint">浏览器环境无法完成 USB 重新枚举与固件校验，因此本页面不提供刷写功能；请使用原厂工具在有线模式下升级。</p>
+          </div>
+          <div class="row">
+            <label class="field">固件文件 (.bin) <input type="file" id="fwFile" accept=".bin,.hex,.img" /></label>
+            <button class="btn btn-confirm" id="btnFwStart" disabled>开始刷写（有线）</button>
+          </div>
+          <pre id="fwLog" class="console"></pre>
+        </div>
+
+        <div class="card">
+          <div class="card-title">IOT驱动设置</div>
+          <p class="hint">启用 IOT 驱动可以自动识别设备，支持有线、蓝牙和 2.4G 三种方式连接，灯效支持音乐律动和光影，支持社区分享功能、兼容更多浏览器。</p>
+          <p class="hint"><b>本复刻版是纯 Web（WebHID）实现</b>：不需要安装 IOT 后台服务，浏览器里点「连接」即可；
+             音乐律动 / 光影 / 社区分享依赖本地服务与厂商服务器，网页版未包含。</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">设备设置</div>
+          <div class="row">
+            <button class="btn btn-confirm" id="btnSettingsRead">读取设备配置</button>
+            <button class="btn btn-confirm" id="btnSettingsWrite">写入设备</button>
+            <button class="btn btn-danger" id="btnReset">恢复出厂设置</button>
+          </div>
+          <div class="grid">
+            <label class="field">配置档 <select id="setProfile"><option>0</option><option>1</option><option>2</option><option>3</option></select></label>
+            <label class="field">回报率 <select id="setRate"></select></label>
+            <label class="field">去抖 (ms) <input type="number" id="setDebounce" min="0" max="20" /></label>
+            <label class="field">系统模式 <select id="setSystem"><option value="win">Win</option><option value="mac">Mac</option><option value="ios">iOS</option><option value="android">Android</option></select></label>
+            <label class="check"><input type="checkbox" id="setWasd" /> WASD 与方向键互换</label>
+          </div>
+          <div class="grid">
+            <label class="field">2.4G 关闭背光时间 <input type="number" id="setSleep24" min="0" max="64800" /></label>
+            <label class="field">2.4G 深度睡眠时间 <input type="number" id="setDeep24" min="0" max="64800" /></label>
+            <label class="field">蓝牙关闭背光时间 <input type="number" id="setSleepBt" min="0" max="64800" /></label>
+            <label class="field">蓝牙深度睡眠时间 <input type="number" id="setDeepBt" min="0" max="64800" /></label>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">配置管理（本地保存 / 导出导入）</div>
+          <div class="toolbar">
+            <button class="btn btn-confirm" id="btnCfgReadDev">从设备读取配置</button>
+            <button class="btn btn-confirm" id="btnCfgApplyDev" disabled>应用到设备</button>
+            <button class="btn btn-gray" id="btnCfgExport" disabled>导出为文件 (.json)</button>
+            <label class="field">导入文件 <input type="file" id="cfgFile" accept=".json,application/json" /></label>
+          </div>
+          <div class="row">
+            <label class="field">名称 <input type="text" id="cfgName" placeholder="例如：日常 / 游戏" /></label>
+            <button class="btn btn-confirm" id="btnCfgSaveLocal" disabled>保存到浏览器</button>
+            <label class="field">已保存 <select id="cfgLocalList"><option value="">（无）</option></select></label>
+            <button class="btn btn-gray" id="btnCfgLoadLocal" disabled>读取</button>
+            <button class="btn btn-danger" id="btnCfgDeleteLocal" disabled>删除</button>
+          </div>
+          <div class="row">
+            <span class="device-pill" id="cfgState">尚未读取或导入</span>
+            <span class="hint" id="cfgName2"></span>
+          </div>
+          <ul class="cfgsum" id="cfgSummary"><li class="hint">点「从设备读取配置」或导入一个 .json 文件</li></ul>
+          <pre class="console" id="cfgLog"></pre>
+        </div>
+
+        <div class="card">
+          <div class="card-title">高级 / 诊断</div>
+          <div class="notice notice-warn">
+            <b>2.4G 接收器使用提示</b>
+            <p>这个接收器的厂商配置通道很敏感：连续 / 过快 / 过晚的读取都可能让它 stall（之后所有访问报错，
+            表现就是「连上一会儿就断」）。所以本页面<b>默认不做任何后台轮询</b>，需要看状态请手动点下面的按钮。</p>
+            <div class="row" style="margin:10px 0 0">
+              <button class="btn btn-confirm" id="btnPollNow">刷新 2.4G 链路状态</button>
+              <label class="check"><input type="checkbox" id="autoPoll" /> 每 5 秒自动刷新（有风险，默认关）</label>
+              <button class="btn btn-gray" id="btnSoftReset">软复位 HID 连接</button>
+            </div>
+            <div class="row" style="margin:10px 0 0">
+              <label class="field">单页探测
+                <select id="probePage">
+                  <option value="0">第 0 页</option><option value="1">第 1 页</option>
+                  <option value="2">第 2 页</option><option value="3">第 3 页</option>
+                  <option value="4">第 4 页</option><option value="5">第 5 页</option>
+                  <option value="6">第 6 页</option><option value="7">第 7 页</option>
+                </select>
+              </label>
+              <button class="btn btn-gray" id="btnProbePage">只读这一页 (0x8A)</button>
+              <span class="hint">逐页测试：如果某一页开始失败，就是它在拖死接收器。</span>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn btn-confirm" id="btnDevInfo">读取设备信息 (0x8F)</button>
+            <button class="btn btn-gray" id="btnRawRead">读一次 Feature</button>
+            <button class="btn btn-gray" id="btnListDevices">列出浏览器已授权的 HID 设备</button>
+            <label class="check"><input type="checkbox" id="autoRead" /> 发送后自动读取并记录</label>
+          </div>
+          <div class="notice" id="devListBox" style="display:none">
+            <b>浏览器已授权的 HID 设备</b>
+            <pre class="console" id="devList" style="margin-top:8px"></pre>
+            <div class="hint">如果这里是空的，说明本页面还没有拿到任何设备的授权 —— 请先点上面的「连接有线键盘 / 连接 2.4G 接收器」并在弹窗里选中设备。</div>
+          </div>
+          <div class="row">
+            <input type="text" id="rawHex" class="mono" placeholder="例如: 8F  或  8A 00 FF 00" />
+            <button class="btn btn-confirm" id="btnRawSend">发送</button>
+            <button class="btn btn-gray" id="btnClearLog">清空日志</button>
+          </div>
+          <pre id="log" class="console"></pre>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- 底部栏（原厂 60px） -->
+  <footer class="statusbar">
+    <span class="sb-left">WebHID · vid 0x3151</span>
+    <span id="footerInfo"></span>
+    <span class="grow"></span>
+    <span class="sb-link" id="btnKeyTest">键盘测试</span>
+    <span class="sb-link" id="btnFactoryReset">恢复出厂设置</span>
+    <span class="sb-ver">V : 3.2.15</span>
+  </footer>
+</div>
+
+<div class="test-overlay hidden" id="keyTestOverlay">
+  <div class="test-card">
+    <div class="test-title">键盘测试</div>
+    <div class="test-grid" id="keyTestGrid"></div>
+    <div class="row"><button class="btn btn-gray" id="btnKeyTestClose">关闭</button></div>
+  </div>
+</div>
+
+<div id="alert" class="toast hidden"></div>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

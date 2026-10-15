@@ -1,0 +1,21 @@
+# DAGK K98 PRO V2 —— WebHID 访问权限 (/dev/hidraw*)
+#
+# 【重要】文件名必须以 70- 开头(要排在 73-seat-late.rules 之前),
+# 否则 uaccess 内置程序看不到 uaccess 标签, 不会给当前登录用户加 ACL。
+#
+# 安装:
+#   sudo cp 70-dagk-k98pro.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger --action=add --subsystem-match=hidraw
+#   # 然后拔插一次设备(或重新登录)
+# 验证:
+#   getfacl /dev/hidrawX        # 应出现 user:<你的用户名>:rw-
+
+# 有线键盘 3151:5002
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3151", ATTRS{idProduct}=="5002", MODE="0660", TAG+="uaccess"
+# 2.4G 无线接收器 3151:5006
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3151", ATTRS{idProduct}=="5006", MODE="0660", TAG+="uaccess"
+# 保险: 该厂商全部 PID (含刷机时进入 Bootloader 的新 PID)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3151", MODE="0660", TAG+="uaccess"
+# 只有将来用 WebUSB 才需要; 用 WebHID 可删
+SUBSYSTEM=="usb", ATTR{idVendor}=="3151", MODE="0660", TAG+="uaccess"
